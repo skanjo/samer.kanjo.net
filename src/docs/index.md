@@ -1,9 +1,9 @@
 ---
-layout: layouts/base.liquid
+layout: layouts/base
 title: Docs
 ---
 
 # Docs
 
 
-* [Terminal Commands](terminal-commands/)
+* [Terminal Commands](terminal-command/)

@@ -1,6 +1,7 @@
 ---
-layout: layouts/base.liquid
+layout: layouts/terminal-command
 title: cUrl
+tags: terminal-command
 ---
 
 # cUrl

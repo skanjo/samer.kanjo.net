@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.liquid
+layout: layouts/base
 title: "Samer Kanjo"
 ---
 
