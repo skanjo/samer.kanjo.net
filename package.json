@@ -4,7 +4,9 @@
   "description": "The personal web site of Samer Kanjo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist",
+    "serve": "npm run clean && npx @11ty/eleventy --serve"
   },
   "keywords": [],
   "author": "Samer Kanjo",
