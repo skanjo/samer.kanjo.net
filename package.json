@@ -1,15 +1,17 @@
 {
   "name": "samer.kanjo.net",
   "version": "1.0.0",
-  "description": "",
+  "description": "The personal web site of Samer Kanjo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Samer Kanjo",
+  "license": "CC-BY-4.0",
+  "repository": "github:skanjo/samer.kanjo.net",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0"
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
   }
 }
