@@ -10,6 +10,8 @@ module.exports = function(config) {
 		});
 	});
 
+	config.addPassthroughCopy("src/img");
+
 return {
 	dir: {
 	      input: "src",
