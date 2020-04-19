@@ -1,10 +1,19 @@
 <header>
-  <h1><a href="/"><img src="/img/xorshift-196.png" width="64" height="64" alt="goto home page"></a> {{ title }}</h1>
 </header>
 
-<nav>
-  <ul>
-    <li><a href="/Docs/">Docs</a></li>
-    <li><a href="/About/">About</a></li>
-  </ul>
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class = "container-fluid">
+		<a class="navbar-brand" href="/"><img src="/img/xorshift-196.png" width="64" height="64" alt="goto home page"> {{ title }}</a>
+		<button class="navbar-toggler" type="btton" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="nav-link" href="/Docs/">Docs</a></li>
+				<li class="nav-item"><a class="nav-link" href="/About/">About</a></li>
+			</ul>
+		</div>
+	</div>
+
 </nav>
+
