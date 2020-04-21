@@ -3,7 +3,13 @@ layout: layouts/base
 title: Terminal Commands
 ---
 
-<h1><a href="/docs/">Docs</a> / Terminal Commands</h1>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="/docs/">Docs</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Terminal Commands</li>
+  </ol>
+</nav>
 
 <ul>
 {%- for termcmd in collections.sortedTerminalCommands -%}

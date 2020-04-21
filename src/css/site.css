@@ -23,7 +23,9 @@ hr.light-100 {
 	margin-top: .8rem;
 	margin-bottom: 1rem;
 }
-
+.breadcrumb-item + .breadcrumb-item::before {
+	content: ">";
+}
 
 .navbar {
 	padding: .8rem;
