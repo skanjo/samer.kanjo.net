@@ -3,7 +3,7 @@ layout: layouts/base
 title: Terminal Commands
 ---
 
-# Terminal Commands
+<h1><a href="/docs/">Docs</a> / Terminal Commands</h1>
 
 <ul>
 {%- for termcmd in collections.sortedTerminalCommands -%}

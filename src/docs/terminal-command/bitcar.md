@@ -4,8 +4,6 @@ title: Bitcar
 tags: terminal-command
 ---
 
-# bitcar
-
 ## Install
 ```bash
 npm -i -g bitcar

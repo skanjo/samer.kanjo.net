@@ -4,8 +4,6 @@ title: tail
 tags: terminal-command
 ---
 
-# tail
-
 ## List last 10 lines of file
 ```bash
 tail some.log

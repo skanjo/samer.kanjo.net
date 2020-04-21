@@ -4,8 +4,6 @@ title: cUrl
 tags: terminal-command
 ---
 
-# cUrl
-
 ## Download to STDOUT
 ```bash
 curl http://www.example.com

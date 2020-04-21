@@ -4,8 +4,6 @@ title: ripgrep
 tags: terminal-command
 ---
 
-# ripgrep
-
 ## Install
 ```bash
 brew install ripgrep
