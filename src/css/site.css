@@ -43,7 +43,9 @@ footer {
 	color: #d5d5d5;
 */	padding-top: 2rem;
 }
-
+.site-footer-col-1 i {
+	font-size: 2rem;
+}
 
 @media (max-width: 576px) {
 
