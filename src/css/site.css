@@ -43,8 +43,12 @@ footer {
 	color: #d5d5d5;
 */	padding-top: 2rem;
 }
-.site-footer-col-1 i {
-	font-size: 2rem;
+footer.site {
+	font-size: .8rem;
+}
+.copyright-button {
+	border-width: 0;
+	width: 4rem;
 }
 
 @media (max-width: 576px) {
