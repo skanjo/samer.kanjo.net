@@ -1,6 +1,7 @@
 ---
 layout: layouts/base
 title: About
+topLevelMenu: About
 ---
 
 <nav aria-label="breadcrumb">

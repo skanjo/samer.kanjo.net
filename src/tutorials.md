@@ -1,6 +1,7 @@
 ---
 layout: layouts/base
 title: Tutorials
+topLevelMenu: Tutorials
 ---
 
 <nav aria-label="breadcrumb">
@@ -11,3 +12,5 @@ title: Tutorials
 </nav>
 
 # Tutorials
+
+{{ topLevelMenu }}

@@ -1,6 +1,7 @@
 ---
 layout: layouts/base
 title: Blog
+topLevelMenu: Blog
 ---
 
 <nav aria-label="breadcrumb">

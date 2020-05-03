@@ -2,33 +2,134 @@
 author: Samer Kanjo
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <!-- Basic -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  	<meta name="description" content="{{ site.description }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+
+    <title>{{ site.title }} - {{ title }}</title> 
+
+    <meta name="description" content="{{ site.description }}">
     <meta name="author" content="{{ site.author.name }}">
     <meta name="generator" content="{{ site.generator }}">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.min.css" integrity="sha256-cuvic28gVvjQIo3Q4hnRpQSNB0aMw3C+kjkR0i+hrWg=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/site.css" />
 
-    <title>{{ site.title }} - {{ title }}</title>
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/theme-elements.css">
+    <link rel="stylesheet" href="/css/theme-blog.css">
+    <link rel="stylesheet" href="/css/theme-shop.css">
+    
+    <!-- Demo CSS -->
+
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="/css/skins/default.css"> 
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Head Libs -->
+    <script src="/vendor/modernizr/modernizr.min.js"></script>
+
   </head>
   <body>
 
-    {% include ../partials/header %}
+    <div class="body">
 
-    <main>{{ content }}</main>
+{% include ../partials/header %}
 
-    {% include ../partials/footer %}
+      <div role="main" class="main">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" integrity="sha256-/ijcOLwFf26xEYAjW75FizKVo5tnTYiQddPZoLUHHZ8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+        <section class="page-header page-header-classic">
+          <div class="container">
+<!--
+            <div class="row">
+              <div class="col">
+                <ul class="breadcrumb">
+                  <li><a href="#">Home</a></li>
+                  <li class="active">Pages</li>
+                </ul>
+              </div>
+            </div>
+-->
+            <div class="row">
+              <div class="col p-static">
+                <span class="page-header-title-border visible" style="width: 124.625px;"></span>
+                <h1 data-title-border>{{ title }}</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container py-2">
+
+          <div class="row">
+
+            <div class="col">
+
+{{ content }}
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+{% include ../partials/footer %}
+
+    </div>
+
+    <!-- Vendor -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/jquery.appear/jquery.appear.min.js"></script>
+    <script src="/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="/vendor/jquery.cookie/jquery.cookie.min.js"></script>
+    <script src="/vendor/popper/umd/popper.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/vendor/common/common.min.js"></script>
+    <script src="/vendor/jquery.validation/jquery.validate.min.js"></script>
+    <script src="/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+    <script src="/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+    <script src="/vendor/isotope/jquery.isotope.min.js"></script>
+    <script src="/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/vendor/vide/jquery.vide.min.js"></script>
+    <script src="/vendor/vivus/vivus.min.js"></script>
+    
+    <!-- Theme Base, Components and Settings -->
+    <script src="/js/theme.js"></script>
+
+    <!-- Theme Custom -->
+    <script src="/js/custom.js"></script>
+    
+    <!-- Theme Initialization Files -->
+    <script src="/js/theme.init.js"></script>
 
   </body>
 </html>

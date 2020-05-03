@@ -10,8 +10,10 @@ module.exports = function(config) {
 		});
 	});
 
-	config.addPassthroughCopy("src/img");
 	config.addPassthroughCopy("src/css");
+	config.addPassthroughCopy("src/img");
+	config.addPassthroughCopy("src/js");
+	config.addPassthroughCopy("src/vendor");
 
 return {
 	dir: {

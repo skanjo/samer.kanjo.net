@@ -1,6 +1,7 @@
 ---
 layout: layouts/base
 title: Guides
+topLevelMenu: Guides
 ---
 
 <nav aria-label="breadcrumb">

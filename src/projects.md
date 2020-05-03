@@ -1,6 +1,7 @@
 ---
 layout: layouts/base
 title: Projects
+topLevelMenu: Projects
 ---
 
 <nav aria-label="breadcrumb">

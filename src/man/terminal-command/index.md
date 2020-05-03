@@ -1,6 +1,7 @@
 ---
 layout: layouts/base
 title: Terminal Commands
+topLevelMenu: Man
 ---
 
 <nav aria-label="breadcrumb">

@@ -1,6 +1,7 @@
 ---
 layout: layouts/base
 title: "Home"
+topLevelMenu: Home
 ---
 
 <div class="jumbotron jumbotron-fluid">
