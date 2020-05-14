@@ -59,7 +59,7 @@ author: Samer Kanjo
 
     <div class="body">
 
-{% include ../partials/header %}
+{% include "../partials/header.njk" %}
 
       <div role="main" class="main">
 
@@ -90,7 +90,7 @@ author: Samer Kanjo
 
             <div class="col">
 
-{{ content }}
+{{ content | safe }}
 
             </div>
 
@@ -100,7 +100,7 @@ author: Samer Kanjo
 
       </div>
 
-{% include ../partials/footer %}
+{% include "../partials/footer.njk" %}
 
     </div>
 

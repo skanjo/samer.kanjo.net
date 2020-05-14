@@ -18,7 +18,14 @@ module.exports = function(config) {
 return {
 	dir: {
 	      input: "src",
+	      includes: "_includes",
+	      //layouts: "_includes",
+	      data: "_data",
 	      output: "dist"
-	    }
+	    },		
+		dataTemplateEngine: "njk",
+		markdownTemplateEngine: "njk",
+		htmlTemplateEngine: "njk",
+		templateFormats: ['njk', 'md', '11ty.js']
 	}
 }
