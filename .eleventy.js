@@ -19,7 +19,7 @@ return {
 	dir: {
 	      input: "src",
 	      includes: "_includes",
-	      //layouts: "_includes",
+	      layouts: "layouts",
 	      data: "_data",
 	      output: "dist"
 	    },		

@@ -1,5 +1,5 @@
 ---
-layout: layouts/terminal-command
+layout: terminal-command
 title: Bitcar
 tags: terminal-command
 ---

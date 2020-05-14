@@ -1,5 +1,5 @@
 ---
-layout: layouts/terminal-command
+layout: terminal-command
 title: jq
 tags: terminal-command
 ---
