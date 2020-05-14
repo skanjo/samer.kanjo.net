@@ -18,9 +18,9 @@ module.exports = function(config) {
 return {
 	dir: {
 	      input: "src",
-	      includes: "_includes",
+	      includes: "includes",
 	      layouts: "layouts",
-	      data: "_data",
+	      data: "data",
 	      output: "dist"
 	    },		
 		dataTemplateEngine: "njk",
