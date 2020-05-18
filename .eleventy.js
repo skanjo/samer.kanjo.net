@@ -7,7 +7,8 @@ module.exports = function(eleventy) {
 	eleventy.addCollection("sortedTerminalCommands", require("./lib/collections/sorted-terminal-commands.js"));
 
 	eleventy.addPassthroughCopy("src/css");
-	eleventy.addPassthroughCopy("src/img");
+	eleventy.addPassthroughCopy({"src/img/favicons": "/"});
+	eleventy.addPassthroughCopy({"src/img/site": "img"});
 	eleventy.addPassthroughCopy("src/js");
 	eleventy.addPassthroughCopy("src/vendor");
 
