@@ -1,7 +1,3 @@
----
-author: Samer Kanjo
----
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -65,16 +61,18 @@ author: Samer Kanjo
 
         <section class="page-header page-header-classic">
           <div class="container">
-<!--
+
+            {% block breadcrumb %}
             <div class="row">
               <div class="col">
                 <ul class="breadcrumb">
-                  <li><a href="#">Home</a></li>
-                  <li class="active">Pages</li>
+                  <li><a href="/">Home</a></li>
+                  <li class="active">{{ title }}</li>
                 </ul>
               </div>
             </div>
--->
+            {% endblock %}
+
             <div class="row">
               <div class="col p-static">
                 <span class="page-header-title-border visible" style="width: 124.625px;"></span>
@@ -90,7 +88,9 @@ author: Samer Kanjo
 
             <div class="col">
 
+{% block main %}
 {{ content | safe }}
+{% endblock %}
 
             </div>
 

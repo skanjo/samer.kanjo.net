@@ -1,0 +1,26 @@
+---
+title: Terminal Commands
+topLevelMenu: Man
+---
+
+{% extends "base.njk" %}
+
+{% block breadcrumb %}
+<div class="row">
+  <div class="col">
+    <ul class="breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li><a href="/man/">Man</a></li>
+      <li class="active">{{ title }}</li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<ul>
+{%- for termcmd in collections.sortedTerminalCommands -%}
+  <li><a href="{{ termcmd.url }}">{{ termcmd.data.title }}</a></li>
+{%- endfor -%}
+</ul>
+{% endblock %}

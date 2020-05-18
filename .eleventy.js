@@ -1,31 +1,29 @@
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+module.exports = function(eleventy) {
 
-module.exports = function(config) {
+	eleventy.setLibrary("njk", require("./lib/libraries/nunjucks.js"));
 
-	config.addPlugin(syntaxHighlight);
+	eleventy.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
 
-	config.addCollection("sortedTerminalCommands", function(collection) {
-		return collection.getFilteredByTag("terminal-command").sort(function(a, b){
-			return a.data.title.localeCompare(b.data.title);
-		});
-	});
+	eleventy.addCollection("sortedTerminalCommands", require("./lib/collections/sorted-terminal-commands.js"));
 
-	config.addPassthroughCopy("src/css");
-	config.addPassthroughCopy("src/img");
-	config.addPassthroughCopy("src/js");
-	config.addPassthroughCopy("src/vendor");
+	eleventy.addPassthroughCopy("src/css");
+	eleventy.addPassthroughCopy("src/img");
+	eleventy.addPassthroughCopy("src/js");
+	eleventy.addPassthroughCopy("src/vendor");
+
+	eleventy.setDataDeepMerge(true);
 
 return {
 	dir: {
 	      input: "src",
+	      output: "dist",
 	      includes: "includes",
 	      layouts: "layouts",
-	      data: "data",
-	      output: "dist"
+	      data: "data"
 	    },		
 		dataTemplateEngine: "njk",
 		markdownTemplateEngine: "njk",
 		htmlTemplateEngine: "njk",
-		templateFormats: ['njk', 'md', '11ty.js']
+		templateFormats: ['njk', 'md']
 	}
 }
