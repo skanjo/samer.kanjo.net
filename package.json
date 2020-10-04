@@ -9,14 +9,9 @@
   "repository": "github:skanjo/samer.kanjo.net",
   "bugs": "https://github.com/skanjo/samer.kanjo.net/issues",
   "scripts": {
-    "clean": "rm -rf dist",
-    "serve": "npm run clean && npx @11ty/eleventy --serve"
   },
   "dependencies": {
-    "nunjucks": "^3.2.1"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
   }
 }
