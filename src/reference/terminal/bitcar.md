@@ -1,8 +1,4 @@
----
-layout: terminal-command
-title: Bitcar
-tags: terminal-command
----
+# bitcar
 
 ## Install
 ```bash
@@ -32,4 +28,3 @@ Include local repos not in GitHub in the cache to support use of bitcar commands
 ```bash
 bit --sync-existing
 ```
-

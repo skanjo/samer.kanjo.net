@@ -1,8 +1,4 @@
----
-layout: terminal-command
-title: jq
-tags: terminal-command
----
+# jq
 
 ## General Usage
 ### Pretty print JSON document from root

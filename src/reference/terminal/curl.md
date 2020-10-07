@@ -1,8 +1,4 @@
----
-layout: terminal-command
-title: cUrl
-tags: terminal-command
----
+# curl
 
 ## Download to STDOUT
 ```bash
@@ -26,7 +22,7 @@ curl -O http://www.example.com/this.html -O http://www.example.com/that.html
 ```
 
 ## Continue/Resume download
-After interruption of a download, resume using where '-' in '-C -' indicates resume at offset that was already downloaded. Otherwise an offset value can be provided. 
+After interruption of a download, resume using where '-' in '-C -' indicates resume at offset that was already downloaded. Otherwise an offset value can be provided.
 ```bash
 curl -C - http://www.example.com
 ```
@@ -108,7 +104,7 @@ Send value where name=value is a valid cookie string
 curl -b "name=value" http://www.example.com
 ```
 
-Send multiple cookies 
+Send multiple cookies
 ```bash
 curl -b "name1=value1; name2=value2" http://www.example.com
 ```

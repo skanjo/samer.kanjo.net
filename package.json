@@ -9,9 +9,13 @@
   "repository": "github:skanjo/samer.kanjo.net",
   "bugs": "https://github.com/skanjo/samer.kanjo.net/issues",
   "scripts": {
+    "src:dev": "vuepress dev src --temp .temp",
+    "src:build": "vuepress build src --temp .temp"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.6.0",
+    "@vuepress/plugin-medium-zoom": "^1.6.0",
+    "vuepress": "^1.6.0"
   }
 }
