@@ -9,14 +9,13 @@
   "repository": "github:skanjo/samer.kanjo.net",
   "bugs": "https://github.com/skanjo/samer.kanjo.net/issues",
   "scripts": {
-    "clean": "rm -rf dist",
-    "serve": "npm run clean && npx @11ty/eleventy --serve"
+    "src:dev": "vuepress dev src --temp .temp",
+    "src:build": "vuepress build src --temp .temp"
   },
-  "dependencies": {
-    "nunjucks": "^3.2.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
+    "@vuepress/plugin-back-to-top": "^1.6.0",
+    "@vuepress/plugin-medium-zoom": "^1.6.0",
+    "vuepress": "^1.6.0"
   }
 }
