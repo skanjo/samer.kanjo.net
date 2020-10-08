@@ -89,7 +89,8 @@ gpg> quit
 gpg --list-keys
 ```
 
-Use long form to see subkey IDs with 16 charters key ID. Use short for 8 character key ID. The short version is the last 8 characters of the long.
+Use long form to see subkey IDs with 16 charters key ID. Use short for 8 character key ID. The short version is the last
+8 characters of the long.
 ```bash
 gpg --list-keys --keyid-format long
 ```
@@ -109,7 +110,8 @@ List subkeys that have expired. By default expired subkeys are not listed.
 gpg --list-secret-keys --list-options show-unusable-subkeys
 ```
 
-Show fingerprints for all keys using the command twice. Can also use with keyid format. This command is very similar to list-keys and pretty prints the keyid.
+Show fingerprints for all keys using the command twice. Can also use with keyid format. This command is very similar to
+list-keys and pretty prints the keyid.
 ```bash
 gpg --fingerprint --fingerprint
 ```
@@ -120,7 +122,8 @@ Import public private key pair of public key used to encrypt files
 gpg --import keys.asc
 ```
 
-Decrypt single file. This will output decryption to same filename with gpg extension removed. Will also prompt for passphrase
+Decrypt single file. This will output decryption to same filename with gpg extension removed. Will also prompt for
+passphrase
 ```bash
 gpg file.gpg
 ```
@@ -157,7 +160,8 @@ gpg --delete-secret-and-public-keys keyid
 ```
 
 ## Edit Trust
-When importing a key the trust level will be set to unknown. To change the trust edit the key and use the trust command to set new level.
+When importing a key the trust level will be set to unknown. To change the trust edit the key and use the trust command
+to set new level.
 ```bash
 gpg --edit-key ${KEYID}
 gpg> trust
@@ -166,14 +170,16 @@ gpg> quit
 ```
 
 ## Update Key Expiration
-Given the secret key and two subkeys on for encryption and one for signing, follow these steps to update expiration date for all keys.
+Given the secret key and two subkeys on for encryption and one for signing, follow these steps to update expiration date
+for all keys.
 
 Get the secret key ID:
 ```bash
 gpg --list-secret-keys
 ```
 
-Edit the key to set new expiration date. This will start a shell to manage the keys and list the selected key and subkeys.
+Edit the key to set new expiration date. This will start a shell to manage the keys and list the selected key and
+subkeys.
 ```bash
 gpg --edit-key KEYID
 ```
@@ -204,11 +210,12 @@ Please specify how long the key should be valid.
       <n>y = key expires in n years
 Key is valid for? (0) 1y
 
-Now review the expiration date for primary key and subkeys to verify expiration dates for all keys. if all is well then save the changes.
+Now review the expiration date for primary key and subkeys to verify expiration
+dates for all keys. if all is well then save the changes.
 gpg> save
 ```
 
-The save command will exit the shell back to the command prompt. List the keys to verify the expiration dates:
+The save command will exit the shell back to the command prompt. List the keysto verify the expiration dates:
 
 ```bash
 gpg --list-secret-keys
