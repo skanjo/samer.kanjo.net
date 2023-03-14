@@ -12,10 +12,9 @@
     "src:dev": "vuepress dev src --temp .temp",
     "src:build": "vuepress build src --temp .temp"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.6.0",
-    "@vuepress/plugin-medium-zoom": "^1.6.0",
-    "vuepress": "^1.6.0"
+    "@vuepress/plugin-back-to-top": "^1.9.9",
+    "@vuepress/plugin-medium-zoom": "^1.9.9",
+    "vuepress": "^1.9.9"
   }
 }

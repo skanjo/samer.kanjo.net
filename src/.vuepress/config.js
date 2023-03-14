@@ -7,6 +7,7 @@ module.exports = {
     logo: '/img/logo.png',
     editLinks: true,
     docsDir: 'src',
+    docsBranch: 'main',
     lastUpdated: true,
     nav: [
       {text: 'Blog', link: '/blog.html'},
