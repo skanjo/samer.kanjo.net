@@ -50,8 +50,40 @@ jq -r .the.path < some.json
 ```
 
 ### Minify
+Reformat the content of a file to remove indentations and newlines.
+
+Assume the following is the content of the file `example.json`:
+
+```json
+{
+  "name": "John",
+  "age": 30,
+  "city": "New York",
+  "pets": [
+    {
+      "name": "Fido",
+      "species": "Dog",
+      "age": 5
+    },
+    {
+      "name": "Whiskers",
+      "species": "Cat",
+      "age": 3
+    }
+  ]
+}
+```
+
+This command will minify the content of the file:
+
 ```bash
-jq -c . < some.json
+jq -c . example.json
+```
+
+This is the output:
+
+```json
+{"name":"John","age":30,"city":"New York","pets":[{"name":"Fido","species":"Dog","age":5},{"name":"Whiskers","species":"Cat","age":3}]}
 ```
 
 ### Get first element in array
