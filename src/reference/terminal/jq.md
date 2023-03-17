@@ -1,9 +1,42 @@
 # jq
 
 ## General Usage
-### Pretty print JSON document from root
+
+### Pretty Print
+Reformat the content of a file to include uniform indentation and new lines to make the JSON content easier to read.
+
+Assume the following is the ugly content of the file `example.json`:
+
+```json
+{"name": "John","age": 30,"city": "New York","pets": [{"name": "Fido","species": "Dog","age": 5},{"name": "Whiskers","species": "Cat","age": 3}]}
+```
+
+This command will pretty print the content of the file:
+
 ```bash
-jq . < some.json
+jq . example.json
+```
+
+This is the output:
+
+```json
+{
+  "name": "John",
+  "age": 30,
+  "city": "New York",
+  "pets": [
+    {
+      "name": "Fido",
+      "species": "Dog",
+      "age": 5
+    },
+    {
+      "name": "Whiskers",
+      "species": "Cat",
+      "age": 3
+    }
+  ]
+}
 ```
 
 ### Extract property
