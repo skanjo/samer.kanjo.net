@@ -3,7 +3,9 @@
 ## General Usage
 
 ### Pretty Print
-Reformat the content of a file to include uniform indentation and new lines to make the JSON content easier to read.
+Reformat the content of a file to include uniform indentation and new lines to make the JSON content easier to read. The
+`.` is the identity filter which produces the input as output and unchanged. By default `jq` pretty prints output so
+this is a convenient way to pretty print ant content.
 
 Assume the following is the ugly content of the file `example.json`:
 
