@@ -1,8 +1,10 @@
 <!doctype html>
 <html lang="en">
-{%  include "partials/head.liquid" %}
-<body>
-{%  include "partials/header.liquid" %}
-{{ content }}
+{% include "partials/head.liquid" %}
+<body class="prose">
+{% include "partials/header.liquid" %}
+<main>
+  {{ content }}
+</main>
 </body>
 </html>

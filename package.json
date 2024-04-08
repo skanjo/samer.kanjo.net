@@ -10,12 +10,21 @@
   "main": "index.js",
   "repository": "github:skanjo/samer.kanjo.net",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
-    "clean": "rimraf _site"
+    "start": "npm-run-all dev:*",
+    "build": "npm-run-all -s clean build:*",
+    "clean": "rimraf _site",
+    "dev:11ty": "eleventy --serve",
+    "dev:css": "tailwindcss -i src/assets/css/site.css -o _site/css/site.css --watch --postcss",
+    "build:11ty": "eleventy",
+    "build:css": "tailwindcss -i src/assets/css/site.css -o _site/css/site.css --postcss"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "rimraf": "^5.0.5"
+    "@tailwindcss/typography": "^0.5.12",
+    "autoprefixer": "^10.4.19",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.38",
+    "rimraf": "^5.0.5",
+    "tailwindcss": "^3.4.3"
   }
 }
