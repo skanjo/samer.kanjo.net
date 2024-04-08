@@ -1,3 +1,8 @@
+---
+layout: layouts/base.liquid
+title: tail
+---
+
 # tail
 
 ## List last 10 lines of file

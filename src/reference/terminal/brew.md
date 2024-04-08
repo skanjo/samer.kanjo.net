@@ -1,3 +1,8 @@
+---
+layout: layouts/base.liquid
+title: brew
+---
+
 # brew
 
 To list software you currently have installed with version numbers, use:

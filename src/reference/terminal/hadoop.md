@@ -1,3 +1,8 @@
+---
+layout: layouts/base.liquid
+title: hadoop
+---
+
 # hadoop
 
 These commands used on hadoop cluster running in Azure moving files between the cluster and blob storge.

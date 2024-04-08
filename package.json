@@ -1,0 +1,21 @@
+{
+  "name": "samer.kanjo.net",
+  "version": "3.0.0",
+  "description": "The personal web site of Samer Kanjo",
+  "keywords": [],
+  "homepage": "https://github.com/skanjo/samer.kanjo.net/blob/master/README.md",
+  "bugs": "https://github.com/skanjo/samer.kanjo.net/issues",
+  "license": "CC-BY-4.0",
+  "author": "Samer Kanjo",
+  "main": "index.js",
+  "repository": "github:skanjo/samer.kanjo.net",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rimraf _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "rimraf": "^5.0.5"
+  }
+}

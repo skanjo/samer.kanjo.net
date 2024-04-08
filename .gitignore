@@ -1,6 +1,8 @@
-dist/
+# 11ty
+_site/
+
+# Node
 node_modules/
-.temp/
 
 # JetBrains
 .idea/

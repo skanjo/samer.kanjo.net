@@ -1,3 +1,8 @@
+---
+layout: layouts/base.liquid
+title: gzip
+---
+
 # gzip
 
 ## Compress

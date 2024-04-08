@@ -1,3 +1,9 @@
+---
+layout: layouts/base.liquid
+title: Projects
+---
+
+
 # Projects
 
 ## This site

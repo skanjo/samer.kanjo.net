@@ -1,3 +1,8 @@
+---
+layout: layouts/base.liquid
+title: gpg
+---
+
 # gpg
 
 ## Key Listing Terms

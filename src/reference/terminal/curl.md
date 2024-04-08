@@ -1,3 +1,8 @@
+---
+layout: layouts/base.liquid
+title: curl
+---
+
 # curl
 
 ## Download to STDOUT

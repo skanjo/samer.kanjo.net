@@ -1,3 +1,8 @@
+---
+layout: layouts/base.liquid
+title: sqlite
+---
+
 # sqlite
 
 To start shell

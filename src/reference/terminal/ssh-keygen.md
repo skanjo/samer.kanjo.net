@@ -1,3 +1,8 @@
+---
+layout: layouts/base.liquid
+title: ssh-keygen
+---
+
 # ssh-keygen
 
 Generate RSA key pair, with passphrase and no prompts
