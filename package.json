@@ -10,8 +10,8 @@
   "main": "index.js",
   "repository": "github:skanjo/samer.kanjo.net",
   "scripts": {
-    "start": "npm-run-all dev:*",
-    "build": "npm-run-all -s clean build:*",
+    "start": "npm-run-all -p dev:*",
+    "build": "npm-run-all -s clean -p build:*",
     "clean": "rimraf _site",
     "dev:11ty": "eleventy --serve",
     "dev:css": "tailwindcss -i src/assets/css/site.css -o _site/css/site.css --watch --postcss",
