@@ -1,3 +1,5 @@
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 module.exports = function (eleventyConfig) {
 
@@ -16,6 +18,9 @@ module.exports = function (eleventyConfig) {
   });
 
   // --- Plugins
+  eleventyConfig.addPlugin(syntaxHighlight, {
+    templateFormats: ["liquid", "md"]
+  });
 
   return {
     dir: {
