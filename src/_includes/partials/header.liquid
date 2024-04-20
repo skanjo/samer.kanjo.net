@@ -1,15 +1,13 @@
-<header>
-  <div>
-    <a href="/">Samer Kanjo</a>
-  </div>
-  <div>
-    <nav>
-      <ul>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/projects/">Projects</a></li>
-        <li><a href="/reference/">Reference</a></li>
-        <li><a href="/about/">About</a></li>
-      </ul>
-    </nav>
-  </div>
+<header class="flex justify-between items-center p-6 lg:px-8 border-b">
+  <a class="flex items-center gap-x-4 text-black hover:no-underline" href="/">
+    <img class="w-12 h-12 rounded-full" src="/img/logo.png"/>
+    <span class="text-2xl font-semibold">Samer Kanjo</span>
+  </a>
+  <div class="flex md:hidden">MENU</div>
+  <nav class="md:flex hidden justify-between items-center flex gap-x-12 text-md">
+    <a class="text-black hover:no-underline hover:text-red-700" href="/blog/">Blog</a>
+    <a class="text-black hover:no-underline hover:text-red-700" href="/projects/">Projects</a>
+    <a class="text-black hover:no-underline hover:text-red-700" href="/reference/">Reference</a>
+    <a class="text-black hover:no-underline hover:text-red-700" href="/about/">About</a>
+  </nav>
 </header>

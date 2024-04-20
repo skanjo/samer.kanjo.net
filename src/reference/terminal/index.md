@@ -24,4 +24,5 @@ of Serverless these days. Most of this should be applicable to Linux as well but
 <li><a href="/reference/terminal/sqlite/">sqlite</a></li>
 <li><a href="/reference/terminal/ssh-keygen/">ssh-keygen</a></li>
 <li><a href="/reference/terminal/tail/">tail</a></li>
+<li><a href="/reference/terminal/typography/">typography</a></li>
 </ul>

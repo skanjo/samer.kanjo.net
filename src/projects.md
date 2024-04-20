@@ -20,6 +20,6 @@ commit was back in 2017.
 ## HIPS
 The project was an interview homework assignment originally developed in Java. Later I implemented this project in
 Clojure, my first Clojure project. Probably not the best Clojure and I am sure I would make some changes now, the thing
-I like about the Clojure version was implementing a multi-mobule project using Leiningen. You can find the
+I like about the Clojure version was implementing a multi-module project using Leiningen. You can find the
 <a href="https://github.com/skanjo/hips-java" target="_blank">Java</a> version and
 <a href="https://github.com/skanjo/hips-clj" target="_blank">Clojure</a> version on GitHub.
