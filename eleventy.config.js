@@ -11,6 +11,12 @@ module.exports = function (eleventyConfig) {
     "src/static/img": "img"
   });
 
+  if (process.env.NODE_ENV === "production") {
+    eleventyConfig.addPassthroughCopy({"node_modules/htmx.org/dist/htmx.min.js": "js/htmx.js"});
+  } else {
+    eleventyConfig.addPassthroughCopy({"node_modules/htmx.org/dist/htmx.js": "js/htmx.js"});
+  }
+  
   // --- Liquid Options
 
   eleventyConfig.setLiquidOptions({
@@ -18,6 +24,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // --- Plugins
+
   eleventyConfig.addPlugin(syntaxHighlight, {
     templateFormats: ["liquid", "md"]
   });

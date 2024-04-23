@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      htmx.org:
+        specifier: ^1.9.12
+        version: 1.9.12
     devDependencies:
       '@11ty/eleventy':
         specifier: ^2.0.1
@@ -630,6 +634,9 @@ packages:
 
   htmlparser2@7.2.0:
     resolution: {integrity: sha512-H7MImA4MS6cw7nbyURtLPO1Tms7C5H602LRETv95z1MxO/7CP7rDVROehUYeYBUYEON94NXXDEPmZuq+hX4sog==}
+
+  htmx.org@1.9.12:
+    resolution: {integrity: sha512-VZAohXyF7xPGS52IM8d1T1283y+X4D+Owf3qY1NZ9RuBypyu9l8cGsxUMAG5fEAb/DhT7rDoJ9Hpu5/HxFD3cw==}
 
   http-equiv-refresh@1.0.0:
     resolution: {integrity: sha512-TScO04soylRN9i/QdOdgZyhydXg9z6XdaGzEyOgDKycePeDeTT4KvigjBcI+tgfTlieLWauGORMq5F1eIDa+1w==}
@@ -2189,6 +2196,8 @@ snapshots:
       domhandler: 4.3.1
       domutils: 2.8.0
       entities: 3.0.1
+
+  htmx.org@1.9.12: {}
 
   http-equiv-refresh@1.0.0: {}
 
