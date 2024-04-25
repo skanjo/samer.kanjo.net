@@ -5,9 +5,9 @@
   </a>
   <div class="flex md:hidden">MENU</div>
   <nav class="md:flex hidden justify-between items-center flex gap-x-12 text-md">
-    <a class="text-black hover:no-underline hover:text-red-700" href="/blog/">Blog</a>
-    <a class="text-black hover:no-underline hover:text-red-700" href="/projects/">Projects</a>
-    <a class="text-black hover:no-underline hover:text-red-700" href="/reference/">Reference</a>
-    <a class="text-black hover:no-underline hover:text-red-700" href="/about/">About</a>
+    {% include "partials/nav-item.liquid", path: "/blog/", name: "Blog" %}
+    {% include "partials/nav-item.liquid", path: "/projects/", name: "Projects" %}
+    {% include "partials/nav-item.liquid", path: "/reference/", name: "Reference" %}
+    {% include "partials/nav-item.liquid", path: "/about/", name: "About" %}
   </nav>
 </header>
