@@ -8,15 +8,28 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "src/static": ".",
     "src/static/icons": "icons",
-    "src/static/img": "img"
+    "src/static/img": "img",
+    "node_modules/@fortawesome/fontawesome-free/webfonts": "webfonts"
   });
 
+  // HTMX
   if (process.env.NODE_ENV === "production") {
     eleventyConfig.addPassthroughCopy({"node_modules/htmx.org/dist/htmx.min.js": "js/htmx.js"});
   } else {
     eleventyConfig.addPassthroughCopy({"node_modules/htmx.org/dist/htmx.js": "js/htmx.js"});
   }
-  
+
+  // Font Awesome
+  if (process.env.NODE_ENV === "production") {
+    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css": "css/fontawesome.css"});
+    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/solid.min.css": "css/solid.css"});
+    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/brands.min.css": "css/brands.css"});
+  } else {
+    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/fontawesome.css": "css/fontawesome.css"});
+    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/solid.css": "css/solid.css"});
+    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/brands.css": "css/brands.css"});
+  }
+
   // --- Liquid Options
 
   eleventyConfig.setLiquidOptions({
