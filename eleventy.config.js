@@ -30,6 +30,13 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/brands.css": "css/brands.css"});
   }
 
+  // Alpine.js
+  if (process.env.NODE_ENV === "production") {
+    eleventyConfig.addPassthroughCopy({"node_modules/alpinejs/dist/cdn.min.js": "js/alpine.js"});
+  } else {
+    eleventyConfig.addPassthroughCopy({"node_modules/alpinejs/dist/cdn.js": "js/alpine.js"});
+  }
+
   // --- Liquid Options
 
   eleventyConfig.setLiquidOptions({
