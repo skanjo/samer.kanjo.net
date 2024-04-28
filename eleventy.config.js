@@ -5,12 +5,7 @@ module.exports = function (eleventyConfig) {
 
   // --- Copy Assets
 
-  eleventyConfig.addPassthroughCopy({
-    "src/static": ".",
-    "src/static/icons": "icons",
-    "src/static/img": "img",
-    "node_modules/@fortawesome/fontawesome-free/webfonts": "webfonts"
-  });
+  eleventyConfig.addPassthroughCopy({"src/static": "/"});
 
   // HTMX
   if (process.env.NODE_ENV === "production") {
@@ -20,15 +15,34 @@ module.exports = function (eleventyConfig) {
   }
 
   // Font Awesome
+  eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/webfonts": "fonts/fontawesome/webfonts"});
   if (process.env.NODE_ENV === "production") {
-    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css": "css/fontawesome.css"});
-    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/solid.min.css": "css/solid.css"});
-    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/brands.min.css": "css/brands.css"});
+    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css": "fonts/fontawesome/css/fontawesome.css"});
+    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/solid.min.css": "fonts/fontawesome/css/solid.css"});
+    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/brands.min.css": "fonts/fontawesome/css/brands.css"});
   } else {
-    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/fontawesome.css": "css/fontawesome.css"});
-    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/solid.css": "css/solid.css"});
-    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/brands.css": "css/brands.css"});
+    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/fontawesome.css": "fonts/fontawesome/css/fontawesome.css"});
+    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/solid.css": "fonts/fontawesome/css/solid.css"});
+    eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/brands.css": "fonts/fontawesome/css/brands.css"});
   }
+
+  // Inter Font
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/@fontsource/inter/latin.css": "fonts/inter/latin.css",
+    "node_modules/@fontsource/inter/files/inter-latin-*": "fonts/inter/files/",
+  })
+
+  // Roboto Mono
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/@fontsource/roboto-mono/latin.css": "fonts/roboto-mono/latin.css",
+    "node_modules/@fontsource/roboto-mono/files/roboto-mono-latin-*": "fonts/roboto-mono/files/",
+  })
+
+  // Roboto Serif
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/@fontsource/roboto-serif/latin.css": "fonts/roboto-serif/latin.css",
+    "node_modules/@fontsource/roboto-serif/files/roboto-serif-latin-*": "fonts/roboto-serif/files/",
+  })
 
   // Alpine.js
   if (process.env.NODE_ENV === "production") {
