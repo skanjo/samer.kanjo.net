@@ -3,22 +3,39 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply antialiased leading-relaxed
+  }
+
   h1 {
     @apply text-4xl mb-8 font-bold
   }
+
   h2 {
     @apply text-3xl mb-4 mt-8 font-semibold
   }
+
   h3 {
     @apply text-2xl mb-2 mt-8 font-medium
   }
+
   h4 {
     @apply text-xl mb-2 mt-8 font-normal
   }
+
   p {
     @apply mb-8 mt-4
   }
+
   a {
-   @apply text-red-700 hover:underline
+    @apply text-red-700 hover:underline
+  }
+
+  ol {
+    @apply list-decimal list-outside ps-10 my-4
+  }
+
+  ul {
+    @apply list-disc list-outside ps-10 my-4
   }
 }
