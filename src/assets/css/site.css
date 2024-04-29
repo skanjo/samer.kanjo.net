@@ -12,7 +12,7 @@
   }
 
   h2 {
-    @apply text-3xl mb-4 mt-8 font-semibold
+    @apply text-3xl mb-4 mt-8 font-semibold border-b-[1px]
   }
 
   h3 {
