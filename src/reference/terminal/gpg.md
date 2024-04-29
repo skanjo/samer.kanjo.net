@@ -6,7 +6,7 @@ title: gpg
 # gpg
 
 ## Key Listing Terms
-```
+```txt
 sec => 'SECret key'
 ssb => 'Secret SuBkey'
 pub => 'PUBlic key'
@@ -20,7 +20,7 @@ that means the secret key has been removed making it impossible to create new su
 secret key. Make sure to backup your secret key.
 
 ### Key Type
-```
+```txt
 Constant           Character      Explanation
 ─────────────────────────────────────────────────────
 PUBKEY_USAGE_SIG      S       key is good for signing

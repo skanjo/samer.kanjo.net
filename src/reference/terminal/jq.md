@@ -304,4 +304,3 @@ Here's what the query is doing, step by step:
 3. `[.Name, .Type, if .ResourceRecords then (.ResourceRecords | map(.Value) | join(",")) else .AliasTarget.DNSName end]` - This part of the query creates an array that includes the `Name`, `Type`, and `Value` fields of each `ResourceRecordSet` object. If the record has `ResourceRecords`, the query maps the `Value` field of each `ResourceRecord` object to an array of strings, and then joins them into a comma-separated string using the `join()` function. If the record has an `AliasTarget`, the query extracts the `DNSName` field under the `AliasTarget` object. The resulting array contains the `Name`, `Type`, and `Value` fields of the record.
 4. `@tsv` - This part of the query formats the output as a tab-separated value (TSV) string. The fields in the array created in step 3 are separated by tabs rather than commas.
 5. `-r` - This option tells jq to output the result as raw text rather than JSON.
-
