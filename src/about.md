@@ -4,7 +4,7 @@ title: About
 ---
 
 <h2>Samer Kanjo</h2>
-Building apps like Singer builds Porsches.
+Building apps like <a href="https://singervehicledesign.com/" target="_blank">Singer</a> builds Porsches.
 
 <h3>Socials</h3>
 <ul>
