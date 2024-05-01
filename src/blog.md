@@ -12,9 +12,3 @@ title: Blog
       kinks right now.</p>
   </div>
 </div>
-
-<ul>
-<li><a href="/blog/post1/">Post 1</a></li>
-<li><a href="/blog/post2/">Post 2</a></li>
-<li><a href="/blog/post3/">Post 3</a></li>
-</ul>
