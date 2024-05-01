@@ -1,13 +1,31 @@
-<header class="flex justify-between items-center p-6 lg:px-8 border-b">
-  <a class="flex items-center gap-x-4 text-black hover:no-underline" href="/">
-    <img class="w-12 h-12 rounded-full" src="/img/logo.png"/>
-    <span class="text-2xl font-semibold">Samer Kanjo</span>
-  </a>
-  <div class="flex md:hidden">MENU</div>
-  <nav class="md:flex hidden justify-between items-center flex gap-x-12 text-md">
-    {% include "partials/nav-item.liquid", path: "/blog/", name: "Blog" %}
-    {% include "partials/nav-item.liquid", path: "/projects/", name: "Projects" %}
-    {% include "partials/nav-item.liquid", path: "/reference/", name: "Reference" %}
-    {% include "partials/nav-item.liquid", path: "/about/", name: "About" %}
-  </nav>
+<header x-data="{ menuOpen: false }">
+  <div id="mainMenu" class="flex justify-between items-center p-6 lg:px-8 border-b">
+    <a class="flex items-center gap-x-4 text-black hover:no-underline" href="/">
+      <img class="w-12 h-12 rounded-full" src="/img/logo.png"/>
+      <span class="text-2xl font-semibold">Samer Kanjo</span>
+    </a>
+    <nav class="md:flex hidden justify-between items-center gap-x-12 text-md">
+      {% include "partials/nav-item.liquid", path: "/blog/", name: "Blog" %}
+      {% include "partials/nav-item.liquid", path: "/projects/", name: "Projects" %}
+      {% include "partials/nav-item.liquid", path: "/reference/", name: "Reference" %}
+      {% include "partials/nav-item.liquid", path: "/about/", name: "About" %}
+    </nav>
+    <button @click="menuOpen = !menuOpen" class="flex md:hidden"><i class="fa fa-bars"></i></button>
+  </div>
+  <div id="mobileMenu" x-show="menuOpen"
+       class="fixed inset-y-0 right-0 z-10 w-full max-w-sm overflow-y-auto ring-1 ring-gray-100 bg-white">
+    <div class="flex items-center justify-between p-6 border-b">
+      <a class="flex items-center gap-x-4 text-black hover:no-underline" href="/">
+        <img class="w-12 h-12 rounded-full" src="/img/logo.png"/>
+        <span class="text-2xl font-semibold">Samer Kanjo</span>
+      </a>
+      <button @click="menuOpen = !menuOpen" class="flex flex-col"><i class="fa fa-x"></i></button>
+    </div>
+    <nav class="flex flex-col px-6 pt-6 gap-y-4">
+      {% include "partials/nav-item.liquid", path: "/blog/", name: "Blog" %}
+      {% include "partials/nav-item.liquid", path: "/projects/", name: "Projects" %}
+      {% include "partials/nav-item.liquid", path: "/reference/", name: "Reference" %}
+      {% include "partials/nav-item.liquid", path: "/about/", name: "About" %}
+    </nav>
+  </div>
 </header>
