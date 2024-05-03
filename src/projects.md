@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.liquid
 title: Projects
+date: 'git Last Modified'
 ---
 
 # Projects

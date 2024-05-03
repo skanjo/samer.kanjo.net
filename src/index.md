@@ -1,5 +1,6 @@
 ---
 layout: layouts/base.liquid
+date: 'git Last Modified'
 ---
 
 ## Blog

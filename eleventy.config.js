@@ -1,4 +1,5 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const {DateTime} = require("luxon");
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 module.exports = function (eleventyConfig) {
@@ -61,6 +62,19 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(syntaxHighlight, {
     templateFormats: ["liquid", "md"]
+  });
+
+  // --- Filters
+
+  eleventyConfig.addLiquidFilter("jsonify", function (value) {
+    return JSON.stringify(value, null, 4); // Pretty print JSON
+  });
+
+  // --- Shortcodes
+
+  eleventyConfig.addShortcode("tsFormat", function (value) {
+    const dt = DateTime.fromJSDate(value);
+    return dt.toLocaleString(DateTime.DATETIME_SHORT_WITH_SECONDS);
   });
 
   return {

@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.liquid
 title: About
+date: 'git Last Modified'
 ---
 
 <h2>Samer Kanjo</h2>
