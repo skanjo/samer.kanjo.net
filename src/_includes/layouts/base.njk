@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+{% include "partials/head.njk" %}
+<body>
+{% include "partials/header.njk" %}
+<main class="p-6 lg:px-8 max-w-4xl mx-auto">
+  {{ content | safe }}
+  {% include 'partials/github-footer.njk' %}
+</main>
+</body>
+</html>

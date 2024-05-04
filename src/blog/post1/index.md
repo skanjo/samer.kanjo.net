@@ -1,5 +1,4 @@
 ---
-layout: layouts/base.liquid
 title: Post 1
 ---
 

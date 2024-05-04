@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.liquid
+layout: layouts/base.njk
 title: Projects
 date: 'git Last Modified'
 ---

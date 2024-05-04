@@ -1,0 +1,7 @@
+{% for item in nav.items %}
+  {% if item.path in page.url %}
+    <a class="text-black hover:no-underline text-red-700" href="{{ item.path }}">{{ item.name }}</a>
+  {% else %}
+    <a class="text-black hover:no-underline hover:text-red-700" href="{{ item.path }}">{{ item.name }}</a>
+  {% endif %}
+{% endfor %}

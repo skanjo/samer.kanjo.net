@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "path": "/blog/",
+      "name": "Blog"
+    },
+    {
+      "path": "/projects/",
+      "name": "Projects"
+    },
+    {
+      "path": "/reference/",
+      "name": "Reference"
+    },
+    {
+      "path": "/about/",
+      "name": "About"
+    }
+  ]
+}

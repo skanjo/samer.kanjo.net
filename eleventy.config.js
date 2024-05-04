@@ -52,22 +52,16 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({"node_modules/alpinejs/dist/cdn.js": "js/alpine.js"});
   }
 
-  // --- Liquid Options
-
-  eleventyConfig.setLiquidOptions({
-    jsTruthy: true,
-  });
-
   // --- Plugins
 
   eleventyConfig.addPlugin(syntaxHighlight, {
-    templateFormats: ["liquid", "md"]
+    templateFormats: ["njk", "md"]
   });
 
   // --- Filters
 
-  eleventyConfig.addLiquidFilter("jsonify", function (value) {
-    return JSON.stringify(value, null, 4); // Pretty print JSON
+  eleventyConfig.addFilter("jsonify", function (value) {
+    return JSON.stringify(value, null, 4);
   });
 
   // --- Shortcodes
@@ -85,8 +79,8 @@ module.exports = function (eleventyConfig) {
       output: "_site",
     },
 
-    markdownTemplateEngine: "liquid",
-    htmlTemplateEngine: "liquid",
-    templateFormats: ["liquid", "md"],
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    templateFormats: ["njk", "md"],
   }
 };
