@@ -71,6 +71,11 @@ module.exports = function (eleventyConfig) {
     return dt.toLocaleString(DateTime.DATETIME_SHORT_WITH_SECONDS);
   });
 
+  eleventyConfig.addShortcode("copyrightNotice", function () {
+    dt = DateTime.now();
+    return `Copyright 2020-${dt.year} Samer Kanjo. All rights reserved.`
+  });
+
   return {
     dir: {
       input: "src",

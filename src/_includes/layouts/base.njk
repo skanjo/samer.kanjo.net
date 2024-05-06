@@ -5,7 +5,16 @@
 {% include "partials/header.njk" %}
 <main class="p-6 lg:px-8 max-w-4xl mx-auto">
   {{ content | safe }}
-  {% include 'partials/github-footer.njk' %}
 </main>
+<footer class="p-6 lg:px-8 max-w-4xl mx-auto">
+  <div class="flex flex-col sm:justify-between sm:items-center sm:flex-row py-4">
+    <a href="{{ site.githubRepoUrl }}/edit/main/{{ page.inputPath }}" target="_blank">
+      Edit this page on GitHub <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>
+    <span class="text-sm">Last Updated: {% tsFormat page.date %}</span>
+  </div>
+  <div class="flex flex-col items-center text-xs text-gray-500 pt-4">
+    {% copyrightNotice %}
+  </div>
+</footer>
 </body>
 </html>
