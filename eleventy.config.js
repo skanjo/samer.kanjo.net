@@ -27,12 +27,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/brands.css": "fonts/fontawesome/css/brands.css"});
   }
 
-  // Inter Font
-  eleventyConfig.addPassthroughCopy({
-    "node_modules/@fontsource/inter/latin.css": "fonts/inter/latin.css",
-    "node_modules/@fontsource/inter/files/inter-latin-*": "fonts/inter/files/",
-  })
-
   // Roboto Mono
   eleventyConfig.addPassthroughCopy({
     "node_modules/@fontsource/roboto-mono/latin.css": "fonts/roboto-mono/latin.css",
