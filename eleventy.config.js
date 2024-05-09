@@ -27,12 +27,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/brands.css": "fonts/fontawesome/css/brands.css"});
   }
 
-  // Roboto Mono
-  eleventyConfig.addPassthroughCopy({
-    "node_modules/@fontsource/roboto-mono/latin.css": "fonts/roboto-mono/latin.css",
-    "node_modules/@fontsource/roboto-mono/files/roboto-mono-latin-*": "fonts/roboto-mono/files/",
-  })
-
   // Roboto Serif
   eleventyConfig.addPassthroughCopy({
     "node_modules/@fontsource/roboto-serif/latin.css": "fonts/roboto-serif/latin.css",
