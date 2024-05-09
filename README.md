@@ -17,8 +17,7 @@ having to download them on every build.
 For Inter and Roboto fonts, I am using [font-files](https://github.com/fontsource/font-files) from Fontsource to select
 the font files and CSS I would like to use on this site. For Font Awesome, I am
 using [Font Awesome Free](https://github.com/FortAwesome/Font-Awesome/tree/6.x/js-packages/%40fortawesome/fontawesome-free)
-to select the font files and CSS I would like to use on this site. I am importing Font Awesome CSS into Tailwind in
-order to shakeout unused class.
+to select the font files and CSS I would like to use on this site.
 
 All licenses for the fonts are included in source.
 
