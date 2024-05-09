@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@fontsource/roboto-serif':
-        specifier: 5.0.13
-        version: 5.0.13
       '@fortawesome/fontawesome-free':
         specifier: 6.5.2
         version: 6.5.2
@@ -95,9 +92,6 @@ packages:
   '@babel/types@7.24.0':
     resolution: {integrity: sha512-+j7a5c253RfKh8iABBhywc8NSfP5LURe7Uh4qpsh6jc+aLJguvmIUBdjSdEMQv2bENrCR5MfRdjGo7vzS/ob7w==}
     engines: {node: '>=6.9.0'}
-
-  '@fontsource/roboto-serif@5.0.13':
-    resolution: {integrity: sha512-pw46TOnyJr7YlZHGKsbJbmyI9zUAIv422ni0Qubc1nAPCtfWn6rllLW/qiVWjH72cYcr/M3sJC9FxPfZ1EY1jA==}
 
   '@fortawesome/fontawesome-free@6.5.2':
     resolution: {integrity: sha512-hRILoInAx8GNT5IMkrtIt9blOdrqHOnPBH+k70aWUAqPZPgopb9G5EQJFpaBx/S8zp2fC+mPW349Bziuk1o28Q==}
@@ -1615,8 +1609,6 @@ snapshots:
       '@babel/helper-string-parser': 7.24.1
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
-
-  '@fontsource/roboto-serif@5.0.13': {}
 
   '@fortawesome/fontawesome-free@6.5.2': {}
 

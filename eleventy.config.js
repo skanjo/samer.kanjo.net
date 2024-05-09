@@ -27,12 +27,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({"node_modules/@fortawesome/fontawesome-free/css/brands.css": "fonts/fontawesome/css/brands.css"});
   }
 
-  // Roboto Serif
-  eleventyConfig.addPassthroughCopy({
-    "node_modules/@fontsource/roboto-serif/latin.css": "fonts/roboto-serif/latin.css",
-    "node_modules/@fontsource/roboto-serif/files/roboto-serif-latin-*": "fonts/roboto-serif/files/",
-  })
-
   // Alpine.js
   if (process.env.NODE_ENV === "production") {
     eleventyConfig.addPassthroughCopy({"node_modules/alpinejs/dist/cdn.min.js": "js/alpine.js"});
