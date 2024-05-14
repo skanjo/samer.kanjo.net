@@ -34,6 +34,10 @@ module.exports = function (eleventyConfig) {
     return JSON.stringify(value, null, 4);
   });
 
+  eleventyConfig.addFilter("keys", function (value) {
+    return Object.keys(value);
+  });
+
   // --- Shortcodes
 
   eleventyConfig.addShortcode("tsFormat", function (value) {
@@ -45,6 +49,31 @@ module.exports = function (eleventyConfig) {
     dt = DateTime.now();
     return `Copyright 2020-${dt.year} Samer Kanjo. All rights reserved.`
   });
+
+  // --- Collections
+
+  // Create a sections collection to support rendering section pages using a single layout. This does require that any
+  // content that is considered part of a section have the section name defined in frontmatter, at least, but should be
+  // defined within an 11ty data file of the directory for that section.
+  eleventyConfig.addCollection("sections", function (collectionApi) {
+    let sections = {};
+
+    collectionApi.getAll().forEach(item => {
+      if (item.data.section) {
+        let sectionName = item.data.section;
+        if (!sections[sectionName]) {
+          sections[sectionName] = [];
+        }
+        sections[sectionName].push(item);
+      }
+    });
+
+    // console.log(sections);
+
+    return sections;
+  });
+
+  // --- Base Config
 
   return {
     dir: {

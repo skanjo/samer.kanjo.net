@@ -1,0 +1,8 @@
+{# Render links from a collection but do not include a link to an index page. #}
+{% macro renderCollectionLinks(collection) %}
+{% for item in collection %}
+  {% if 'index.md' not in item.inputPath %}
+    <a href="{{ item.url }}">{{ item.data.title }}</a>
+  {% endif %}
+{% endfor %}
+{% endmacro %}

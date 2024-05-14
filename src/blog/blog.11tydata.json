@@ -1,4 +1,4 @@
 {
-  "layout": "layouts/base.njk",
+  "layout": "layouts/full_width.njk",
   "date": "git Last Modified"
 }

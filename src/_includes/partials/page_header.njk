@@ -1,4 +1,4 @@
-<header x-data="{ menuOpen: false }">
+<header x-data="{ navMenuOpen: false }">
   <div id="mainMenu" class="flex justify-between items-center p-6 lg:px-8 border-b">
     <a class="flex items-center gap-x-4 text-black hover:no-underline" href="/">
       <img class="w-12 h-12 rounded-full" src="/img/logo.png"/>
@@ -7,7 +7,7 @@
     <nav class="md:flex hidden justify-between items-center gap-x-12 text-md">
       {% include "partials/nav-items.njk" %}
     </nav>
-    <button @click="menuOpen = !menuOpen" class="flex md:hidden">
+    <button @click="navMenuOpen = !navMenuOpen" class="flex md:hidden">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 inline">
         <!--!
         Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com
@@ -18,17 +18,17 @@
           d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7
           14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32
           32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-        </svg>
+      </svg>
     </button>
   </div>
-  <div id="mobileMenu" x-show="menuOpen"
+  <div id="mobileMenu" x-show="navMenuOpen"
        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto ring-1 ring-gray-100 bg-white">
     <div class="flex items-center justify-between p-6 border-b">
       <a class="flex items-center gap-x-4 text-black hover:no-underline" href="/">
         <img class="w-12 h-12 rounded-full" src="/img/logo.png"/>
         <span class="text-2xl font-semibold">Samer Kanjo</span>
       </a>
-      <button @click="menuOpen = !menuOpen" class="flex flex-col">
+      <button @click="navMenuOpen = !navMenuOpen" class="flex flex-col">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-4 inline">
           <!--!
           Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com

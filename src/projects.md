@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/full_width.njk
 title: Projects
 date: 'git Last Modified'
 ---

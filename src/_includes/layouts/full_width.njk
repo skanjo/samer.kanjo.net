@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+{% include "partials/head.njk" %}
+<body>
+
+{% include "partials/page_header.njk" %}
+
+<div class="flex flex-col max-w-4xl mx-auto">
+  <main class="p-6 lg:px-8">
+    {{ content | safe }}
+  </main>
+
+  {% block footer %}
+  {% include 'partials/content_footer.njk' %}
+  {% endblock %}
+</div>
+
+</body>
+</html>

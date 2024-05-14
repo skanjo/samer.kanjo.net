@@ -13,19 +13,3 @@ title: Terminal
       well but MacOS has its own flavor at times.</p>
   </div>
 </div>
-
-<ul>
-<li><a href="/reference/terminal/bitcar/">bitcar</a></li>
-<li><a href="/reference/terminal/brew/">brew</a></li>
-<li><a href="/reference/terminal/curl/">curl</a></li>
-<li><a href="/reference/terminal/gpg/">gpg</a></li>
-<li><a href="/reference/terminal/gzip/">gzip</a></li>
-<li><a href="/reference/terminal/hadoop/">hadoop</a></li>
-<li><a href="/reference/terminal/hdfs/">hdfs</a></li>
-<li><a href="/reference/terminal/jq/">jq</a></li>
-<li><a href="/reference/terminal/ripgrep/">ripgrep</a></li>
-<li><a href="/reference/terminal/sqlite/">sqlite</a></li>
-<li><a href="/reference/terminal/ssh-keygen/">ssh-keygen</a></li>
-<li><a href="/reference/terminal/tail/">tail</a></li>
-<li><a href="/reference/terminal/typography/">typography</a></li>
-</ul>
