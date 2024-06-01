@@ -58,9 +58,8 @@ module.exports = function (eleventyConfig) {
 
   // --- Shortcodes
 
-  eleventyConfig.addShortcode("copyrightNotice", function () {
-    dt = DateTime.now();
-    return `Copyright 2020-${dt.year} Samer Kanjo. All rights reserved.`
+  eleventyConfig.addShortcode("currentYear", function () {
+    return DateTime.now().year;
   });
 
   // --- Collections
