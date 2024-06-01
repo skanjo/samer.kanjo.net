@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/byte.njk",
+  "date": "git Last Modified",
+  "tags": "byte"
+}

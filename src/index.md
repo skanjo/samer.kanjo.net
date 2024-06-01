@@ -2,9 +2,9 @@
 layout: layouts/home.njk
 ---
 
-## Blog
+## Bytes
 
-Just what you would expect.
+Just what you would expect from a blog.
 
 ## Projects
 

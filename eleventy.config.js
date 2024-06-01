@@ -38,12 +38,25 @@ module.exports = function (eleventyConfig) {
     return Object.keys(value);
   });
 
-  // --- Shortcodes
-
-  eleventyConfig.addShortcode("tsFormat", function (value) {
-    const dt = DateTime.fromJSDate(value);
-    return dt.toLocaleString(DateTime.DATETIME_SHORT_WITH_SECONDS);
+  eleventyConfig.addFilter("parseDate", function (value) {
+    if (typeof value === 'string') {
+      return DateTime.fromISO(value);
+    } else if (value instanceof Date) {
+      return DateTime.fromJSDate(value);
+    } else {
+      throw new Error("Unsupported date value.");
+    }
   });
+
+  eleventyConfig.addFilter("formatDateFull", function (value) {
+    return value.toLocaleString(DateTime.DATE_FULL);
+  })
+
+  eleventyConfig.addFilter("formatTimestampShort", function (value) {
+    return value.toLocaleString(DateTime.DATETIME_SHORT_WITH_SECONDS);
+  })
+
+  // --- Shortcodes
 
   eleventyConfig.addShortcode("copyrightNotice", function () {
     dt = DateTime.now();
@@ -68,9 +81,15 @@ module.exports = function (eleventyConfig) {
       }
     });
 
-    // console.log(sections);
-
     return sections;
+  });
+
+  eleventyConfig.addCollection("bytes", function (collectionApi) {
+    const descendingPubDate = (a, b) => {
+      return b.data.publicationDate.localeCompare(a.data.publicationDate);
+    };
+
+    return collectionApi.getFilteredByTag("byte").sort(descendingPubDate);
   });
 
   // --- Base Config
