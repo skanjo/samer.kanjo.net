@@ -1,0 +1,30 @@
+{#
+Create previous and next link navigation in order to traverse the collection from the current page. The names of the
+links are configurable based on use case.
+
+Note: When using the default 11ty filters in this Nunjucks macro, the `page` object is not defined and the reason it is
+passed as an argument to this macros. In addition, the code path of the filter will fail if the language code is not
+provided. Since I only support English language I am defaulting the value here. See the 11ty source for the filter on
+GitHub to review:
+- https://github.com/11ty/eleventy/blob/v2.0.1/src/defaultConfig.js#L37
+- https://github.com/11ty/eleventy/blob/v2.0.1/src/Filters/GetLocaleCollectionItem.js#L23
+#}
+
+{% macro renderPageLinks(collection, page, prevName = 'Previous', nextName = 'Next') %}
+
+{% set prevItem = collection | getPreviousCollectionItem(page, "en") %}
+{% set nextItem = collection | getNextCollectionItem(page, "en") %}
+
+{% if prevItem or nextItem %}
+  <nav class="p-6 flex justify-between items-center border-t">
+    {% if prevItem %}
+      <a href="{{ prevItem.url }}"><< {{ prevName }}</a>
+    {% endif %}
+    <span></span>
+    {% if nextItem %}
+      <a href="{{ nextItem.url }}">{{ nextName }} >></a>
+    {% endif %}
+  </nav>
+{% endif %}
+
+{% endmacro %}

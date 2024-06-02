@@ -1,9 +1,17 @@
 {% extends 'src/_includes/layouts/full_width.njk' %}
 
+{% from "src/_includes/macros/page_links.njk" import renderPageLinks %}
+
 {% block main %}
-<div class="flex flex-col">
-  <h1>{{ title }}</h1>
-  <span>{{ publicationDate | parseDate | formatDateFull }}</span>
-</div>
-{{ content | safe }}
+<article>
+  <div class="flex flex-col">
+    <h1>{{ title }}</h1>
+    <span>{{ publicationDate | parseDate | formatDateFull }}</span>
+  </div>
+  {{ content | safe }}
+</article>
+{% endblock %}
+
+{% block pagination %}
+{{ renderPageLinks(collections.bytes, page, "Newer", "Older") }}
 {% endblock %}
