@@ -83,12 +83,12 @@ module.exports = function (eleventyConfig) {
     return sections;
   });
 
-  eleventyConfig.addCollection("bytes", function (collectionApi) {
+  eleventyConfig.addCollection("posts", function (collectionApi) {
     const descendingPubDate = (a, b) => {
       return b.data.publicationDate.localeCompare(a.data.publicationDate);
     };
 
-    return collectionApi.getFilteredByTag("byte").sort(descendingPubDate);
+    return collectionApi.getFilteredByTag("post").sort(descendingPubDate);
   });
 
   // --- Base Config

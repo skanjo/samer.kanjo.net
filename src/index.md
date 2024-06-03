@@ -2,7 +2,7 @@
 layout: layouts/home.njk
 ---
 
-## Bytes
+## Blog
 
 Just what you would expect from a blog.
 

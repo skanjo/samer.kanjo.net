@@ -1,8 +1,8 @@
 {
   "items": [
     {
-      "path": "/bytes/",
-      "name": "Bytes"
+      "path": "/blog/",
+      "name": "Blog"
     },
     {
       "path": "/projects/",
