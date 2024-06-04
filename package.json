@@ -1,6 +1,6 @@
 {
   "name": "samer.kanjo.net",
-  "version": "3.14.0",
+  "version": "3.15.0",
   "description": "The personal web site of Samer Kanjo",
   "keywords": [],
   "homepage": "https://github.com/skanjo/samer.kanjo.net/blob/master/README.md",
@@ -25,6 +25,7 @@
     "@tailwindcss/typography": "0.5.12",
     "autoprefixer": "10.4.19",
     "luxon": "3.4.4",
+    "markdown-it-link-attributes": "4.0.1",
     "npm-run-all": "4.1.5",
     "postcss": "8.4.38",
     "rimraf": "5.0.5",

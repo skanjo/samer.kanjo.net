@@ -1,5 +1,7 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const {DateTime} = require("luxon");
+const markdownIt = require("markdown-it");
+const markdownItLinkAttributes = require('markdown-it-link-attributes');
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 module.exports = function (eleventyConfig) {
@@ -21,6 +23,19 @@ module.exports = function (eleventyConfig) {
   } else {
     eleventyConfig.addPassthroughCopy({"node_modules/alpinejs/dist/cdn.js": "js/alpine.js"});
   }
+
+  // --- Libraries
+
+  eleventyConfig.setLibrary('md', markdownIt({
+      html: true
+    }).use(markdownItLinkAttributes, {
+      pattern: /^https?:\/\//,
+      attrs: {
+        target: '_blank',
+        rel: 'noopener noreferrer'
+      }
+    })
+  );
 
   // --- Plugins
 
