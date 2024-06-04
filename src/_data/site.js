@@ -5,8 +5,8 @@ module.exports = {
   githubRepoUrl: "https://github.com/skanjo/samer.kanjo.net",
   author: {
     name: "Samer Kanjo",
-    twitter: "https://www.twitter.com/samerkanjo/",
-    linkedin: "https://www.linkedin.com/in/samerkanjo/",
+    bluesky: "https://bsky.app/profile/samerkanjo.bsky.social",
+    linkedin: "https://www.linkedin.com/in/samerkanjo",
     github: "https://github.com/skanjo"
   }
 };

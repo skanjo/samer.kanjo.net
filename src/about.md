@@ -10,7 +10,7 @@ Building apps like <a href="https://singervehicledesign.com/" target="_blank">Si
 <h3>Socials</h3>
 <ul>
 <li><a href="{{ site.author.github }}" target="_blank">GitHub</a></li>
-<li><a href="{{ site.author.twitter }}" target="_blank">Twitter</a></li>
+<li><a href="{{ site.author.bluesky }}" target="_blank">Bluesky</a></li>
 <li><a href="{{ site.author.linkedin }}" target="_blank">LinkedIn</a></li>
 </ul>
 

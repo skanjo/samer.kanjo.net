@@ -4,9 +4,12 @@
       <img class="w-12 h-12 rounded-full" src="/img/logo.png"/>
       <span class="text-2xl font-semibold">Samer Kanjo</span>
     </a>
-    <nav class="md:flex hidden justify-between items-center gap-x-12 text-md">
-      {% include "partials/nav-items.njk" %}
-    </nav>
+    <div class="hidden md:flex justify-between items-center">
+      <nav class="flex justify-between items-center gap-x-8 text-md">
+        {% include "partials/nav_items.njk" %}
+      </nav>
+      {% include "partials/social_links.njk" %}
+    </div>
     <button @click="navMenuOpen = !navMenuOpen" class="flex md:hidden">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 inline">
         <!--!
@@ -42,8 +45,11 @@
         </svg>
       </button>
     </div>
-    <nav class="flex flex-col px-6 pt-6 gap-y-4">
-      {% include "partials/nav-items.njk" %}
-    </nav>
+    <div class="flex flex-col">
+      <nav class="flex flex-col px-6 pt-6 gap-y-4">
+        {% include "partials/nav_items.njk" %}
+      </nav>
+      {% include "partials/social_links.njk" %}
+    </div>
   </div>
 </header>
