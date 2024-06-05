@@ -69,12 +69,10 @@ function displayPosts(posts) {
     postElement.appendChild(postBody);
     postElement.appendChild(postLink);
 
-    console.log(`post author handle: ${post.post.author.handle} and my username ${handle}`);
-
     // Check if the post is a report by you
     if (post.post.author.handle !== handle) {
       const reportIndicator = document.createElement('div');
-      reportIndicator.className = 'report-indicator';
+      reportIndicator.className = 'repost-indicator';
       reportIndicator.textContent = 'Reposted by you';
       postElement.appendChild(reportIndicator);
     }
