@@ -29,7 +29,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary('md', markdownIt({
       html: true
     }).use(markdownItLinkAttributes, {
-      pattern: /^https?:\/\//,
+      matcher(href, config) {
+          return href.startsWith("https:");
+      },
       attrs: {
         target: '_blank',
         rel: 'noopener noreferrer'

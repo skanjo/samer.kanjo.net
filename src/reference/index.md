@@ -12,6 +12,4 @@ title: Reference
   </div>
 </div>
 
-<ul>
-<li><a href="/reference/terminal/">Terminal</a></li>
-</ul>
+- [Terminal](/reference/terminal/)

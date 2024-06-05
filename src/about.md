@@ -4,15 +4,15 @@ title: About
 date: 'git Last Modified'
 ---
 
-<h2>Samer Kanjo</h2>
-Building apps like <a href="https://singervehicledesign.com/" target="_blank">Singer</a> builds Porsches.
+## Samer Kanjo
 
-<h3>Socials</h3>
-<ul>
-<li><a href="{{ site.author.github }}" target="_blank">GitHub</a></li>
-<li><a href="{{ site.author.bluesky }}" target="_blank">Bluesky</a></li>
-<li><a href="{{ site.author.linkedin }}" target="_blank">LinkedIn</a></li>
-</ul>
+Building apps like [Singer](https://singervehicledesign.com) builds Porsches.
+
+### Socials
+
+- [GitHub]({{ site.author.github }})
+- [Bluesky]({{ site.author.bluesky }})
+- [LinkedIn]({{ site.author.linkedin }})
 
 <h3>Made with
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-6 inline fill-red-700">
@@ -27,11 +27,12 @@ d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 30
 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/>
 </svg>
 Using</h3>
-<ul>
-<li><a href="https://www.11ty.dev/" target="_blank">Eleventy</a></li>
-<li><a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a></li>
-<li><a href="https://prismjs.com/" target="_blank">Prism</a></li>
-<li><a href="https://fontawesome.com/" target="_blank">Font Awesome</a></li>
-<li><a href="https://fontsource.org/" target="_blank">Fontsource</a></li>
-<li>Bare hands</li>
-</ul>
+
+- [Eleventy](https://www.11ty.dev)
+- [Tailwind CSS](https://tailwindcss.com)
+- [AlpineJS](https://alpinejs.dev)
+- [Prism](https://prismjs.com)
+- [Font Awesome](https://fontawesome.com)
+- [Fontsource](https://fontsource.org)
+- [Netlify](https://www.netlify.com)
+- Bare hands
