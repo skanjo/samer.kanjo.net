@@ -7,6 +7,7 @@ module.exports = {
     name: "Samer Kanjo",
     bluesky: "https://bsky.app/profile/samerkanjo.bsky.social",
     linkedin: "https://www.linkedin.com/in/samerkanjo",
-    github: "https://github.com/skanjo"
+    github: "https://github.com/skanjo",
+    leetcode: "https://leetcode.com/u/samerkanjo/"
   }
 };

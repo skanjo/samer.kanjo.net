@@ -11,6 +11,7 @@ Building apps like [Singer](https://singervehicledesign.com) builds Porsches.
 ### Socials
 
 - [GitHub]({{ site.author.github }})
+- [LeetCode]({{ site.author.leetcode }})
 - [Bluesky]({{ site.author.bluesky }})
 - [LinkedIn]({{ site.author.linkedin }})
 
