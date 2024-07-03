@@ -1,8 +1,8 @@
 ---
-title: gpg
+title: 'gpg: Cheat Sheet'
+publicationDate: '2020-10-07'
+tags: 'Cheat Sheet'
 ---
-
-# gpg
 
 ## Key Listing Terms
 ```txt

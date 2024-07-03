@@ -1,9 +1,8 @@
 ---
-title: hdfs
+title: 'hdfs: Cheat Sheet'
+publicationDate: '2020-10-07'
+tags: 'Cheat Sheet'
 ---
-
-# hdfs
-
 
 Run filesystem commands
 ```bash

@@ -1,8 +1,8 @@
 ---
-title: curl
+title: 'curl: Cheat Sheet'
+publicationDate: '2020-04-18'
+tags: 'Cheat Sheet'
 ---
-
-# curl
 
 ## Download to STDOUT
 ```bash

@@ -1,8 +1,8 @@
 ---
-title: ssh-keygen
+title: 'ssh-keygen: Cheat Sheet'
+publicationDate: '2020-10-07'
+tags: 'Cheat Sheet'
 ---
-
-# ssh-keygen
 
 Generate RSA key pair, with passphrase and no prompts
 ```bash

@@ -1,8 +1,8 @@
 ---
-title: sqlite
+title: 'sqlite: Cheat Sheet'
+publicationDate: '2020-10-07'
+tags: 'Cheat Sheet'
 ---
-
-# sqlite
 
 To start shell
 ```bash

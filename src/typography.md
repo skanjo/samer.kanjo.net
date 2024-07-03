@@ -1,5 +1,7 @@
 ---
-title: typography
+layout: layouts/full_width.njk
+title: Typography
+date: 'git Last Modified'
 ---
 
 # Heading 1

@@ -1,8 +1,8 @@
 ---
-title: bitcar
+title: 'bitcar: Cheat Sheet'
+publicationDate: '2020-04-19'
+tags: 'Cheat Sheet'
 ---
-
-# bitcar
 
 ## Install
 ```bash

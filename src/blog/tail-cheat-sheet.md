@@ -1,8 +1,8 @@
 ---
-title: tail
+title: 'tail: Cheat Sheet'
+publicationDate: '2020-04-19'
+tags: 'Cheat Sheet'
 ---
-
-# tail
 
 ## List last 10 lines of file
 ```bash

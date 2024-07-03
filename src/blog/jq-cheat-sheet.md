@@ -1,8 +1,9 @@
 ---
-title: jq
+title: 'jq: Cheat Sheet'
+publicationDate: '2020-04-19'
+lastUpdated: '2023-03-17'
+tags: 'Cheat Sheet'
 ---
-
-# jq
 
 ## General Usage
 

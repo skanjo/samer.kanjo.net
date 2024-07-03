@@ -1,8 +1,8 @@
 ---
-title: gzip
+title: 'gzip: Cheat Sheet'
+publicationDate: '2020-10-07'
+tags: 'Cheat Sheet'
 ---
-
-# gzip
 
 ## Compress
 Zip all files and all files in sub-directories of the specified starting path.

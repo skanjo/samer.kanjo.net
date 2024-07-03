@@ -1,8 +1,8 @@
 ---
-title: brew
+title: 'brew: Cheat Sheet'
+publicationDate: '2020-10-07'
+tags: 'Cheat Sheet'
 ---
-
-# brew
 
 To list software you currently have installed with version numbers, use:
 ```bash

@@ -1,5 +1,7 @@
 ---
-title: hadoop
+title: 'hadoop: Cheat Sheet'
+publicationDate: '2020-10-07'
+tags: 'Cheat Sheet'
 ---
 
 # hadoop
