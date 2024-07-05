@@ -8,6 +8,8 @@ have made many attempts using the latest blogging thing at the moment. It did en
 time with my focus on the technical aspects of making this site versus, you know, writing something. It is different
 this time around.
 
+---
+
 ## Why Is It Different Now?
 
 I have a new motivation, I recently lost my job. This has given me some "free" time. These days I prefer spending my

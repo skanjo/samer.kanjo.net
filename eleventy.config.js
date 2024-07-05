@@ -26,18 +26,23 @@ module.exports = function (eleventyConfig) {
 
   // --- Libraries
 
-  eleventyConfig.setLibrary('md', markdownIt({
-      html: true
-    }).use(markdownItLinkAttributes, {
-      matcher(href, config) {
-          return href.startsWith("https:");
-      },
-      attrs: {
-        target: '_blank',
-        rel: 'noopener noreferrer'
-      }
-    })
-  );
+  let markdown = markdownIt({
+    html: true
+  }).use(markdownItLinkAttributes, {
+    matcher(href, config) {
+      return href.startsWith("https:");
+    },
+    attrs: {
+      target: '_blank',
+      rel: 'noopener noreferrer'
+    }
+  });
+
+  eleventyConfig.setLibrary('md', markdown);
+
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true
+  });
 
   // --- Plugins
 
@@ -73,6 +78,10 @@ module.exports = function (eleventyConfig) {
     return value.toLocaleString(DateTime.DATETIME_SHORT_WITH_SECONDS);
   })
 
+  eleventyConfig.addFilter("md", function (content = "") {
+    return markdown.render(content);
+  });
+
   // --- Shortcodes
 
   eleventyConfig.addShortcode("currentYear", function () {
@@ -100,13 +109,17 @@ module.exports = function (eleventyConfig) {
     return sections;
   });
 
-  eleventyConfig.addCollection("posts", function (collectionApi) {
+  const sortedPosts = (maxPosts = null) => (collectionApi) => {
     const descendingPubDate = (a, b) => {
       return b.data.publicationDate.localeCompare(a.data.publicationDate);
     };
 
-    return collectionApi.getFilteredByTag("post").sort(descendingPubDate);
-  });
+    const posts = collectionApi.getFilteredByTag("post").sort(descendingPubDate);
+
+    return maxPosts ? posts.slice(0, maxPosts) : posts;
+  }
+  eleventyConfig.addCollection("posts", sortedPosts());
+  eleventyConfig.addCollection("newestPosts", sortedPosts(4));
 
   // --- Base Config
 
