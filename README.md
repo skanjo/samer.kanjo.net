@@ -1,5 +1,11 @@
 # samer.kanjo.net site
 
+Welcome to my personal web site. My original intent was to focus on topics related to software development but I have
+decided that I will post on any topic I would like share. In addition, I intend to use this to showcase some level of
+competance putting together a set of characters to form functional HTML, CSS, and JavaScript. The site is built using
+[11ty](https://www.11ty.dev) , [Tailwind CSS](https://tailwindcss.com), and [AlpineJS](https://alpinejs.dev) and deployed using [Netlify](https://www.netlify.com). No AI was used to build
+this site.
+
 ## Fonts
 
 This web site is using several custom fonts including:
