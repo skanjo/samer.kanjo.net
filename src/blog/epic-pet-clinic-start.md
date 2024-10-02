@@ -1,6 +1,7 @@
 ---
 title: 'Epic Pet Clinic: The Beginning'
 publicationDate: '2024-07-09'
+lastUpdated: '2024-10-02'
 tags: 'Projects'
 ---
 
@@ -12,6 +13,13 @@ wireframes have been captured in the [Epic Pet Clinic Spec](https://github.com/s
 which will evolve to make *Epic Pet Clinic* a more useful application.
 
 ---
+
+_Update: The beginning has reached a premature end. Hilla is, IMO, a complete mess of unnecessary complexity and I have
+no interest in pursuing this tech stack. In place of this Spring Hilla tech stack as my first implementation of the
+spec, I started another project using
+[Micronaut and HTMX](https://github.com/skanjo/epic-pet-clinic-micronaut-htmx). I will add a new blog post about this
+project soon. The [Epic Pet Clinic: Spring Hilla Edition](https://github.com/skanjo/epic-pet-clinic-spring-hilla) repo
+has been archived._
 
 As of this writing the current versions that will be used are Java 22, Spring 3, and Hilla 24. The initial version will
 only focus on the uses cases and wireframes as defined in
