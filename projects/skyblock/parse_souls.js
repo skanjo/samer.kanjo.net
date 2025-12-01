@@ -83,11 +83,21 @@ function parseWikiTable(sectionText, sectionType) {
     const levelMatch = cells[1].match(/\{\{Lv\|(\d+)\}\}/);
     const level = levelMatch ? levelMatch[1] : '';
 
-    let floorTier, hp, dmg, manaCost, dropChance, notes;
+    let floorTiers, hp, dmg, manaCost, dropChance, notes;
 
     if (hasFloorTier) {
       // Catacombs/Kuudra format: Name, Level, Floor/Tier, HP, DMG, Mana Cost, Drop Chance, Notes
-      floorTier = cleanFloorTierData(cells[2]);
+      // Check if floor/tier field contains multiple values separated by <br>
+      const floorTierCell = cells[2];
+      floorTiers = floorTierCell.split('<br>')
+        .map(ft => cleanFloorTierData(ft.trim()))
+        .filter(ft => ft.length > 0);
+
+      // If no valid floor/tier after splitting, use the cleaned original
+      if (floorTiers.length === 0) {
+        floorTiers = [cleanFloorTierData(floorTierCell)];
+      }
+
       hp = cells[3].replace(/,/g, '').trim();
       dmg = cells[4].replace(/,/g, '').trim();
       manaCost = cells[5].replace(/,/g, '').trim();
@@ -107,7 +117,7 @@ function parseWikiTable(sectionText, sectionType) {
     } else {
       // Normal format: Name, Level, HP, DMG, Mana Cost, Drop Chance, Notes
       // Add empty floor/tier column for consistency
-      floorTier = '';
+      floorTiers = [''];
       hp = cells[2].replace(/,/g, '').trim();
       dmg = cells[3].replace(/,/g, '').trim();
       manaCost = cells[4].replace(/,/g, '').trim();
@@ -126,9 +136,11 @@ function parseWikiTable(sectionText, sectionType) {
       }
     }
 
-    // Create one row per mob name
+    // Create one row per combination of name and floor/tier
     for (const name of names) {
-      rows.push([sectionType, name, level, floorTier, hp, dmg, manaCost, dropChance, notes]);
+      for (const floorTier of floorTiers) {
+        rows.push([sectionType, name, level, floorTier, hp, dmg, manaCost, dropChance, notes]);
+      }
     }
   }
 
