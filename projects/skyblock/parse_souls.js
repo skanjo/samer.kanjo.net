@@ -73,8 +73,11 @@ function parseWikiTable(sectionText, sectionType) {
     // Remove leading | from each cell
     const cells = lines.map(line => line.substring(1).trim());
 
-    // Extract name (handle both [[Name]] and [[Link|Display Name]] formats)
-    const name = extractWikiLinkName(cells[0]);
+    // Check if the name field contains multiple mobs separated by <br>
+    const nameCell = cells[0];
+    const names = nameCell.split('<br>')
+      .map(n => extractWikiLinkName(n.trim()))
+      .filter(n => n.length > 0);
 
     // Extract level from {{Lv|1}}
     const levelMatch = cells[1].match(/\{\{Lv\|(\d+)\}\}/);
@@ -123,8 +126,10 @@ function parseWikiTable(sectionText, sectionType) {
       }
     }
 
-    // All rows now have the same format with floor/tier column
-    rows.push([sectionType, name, level, floorTier, hp, dmg, manaCost, dropChance, notes]);
+    // Create one row per mob name
+    for (const name of names) {
+      rows.push([sectionType, name, level, floorTier, hp, dmg, manaCost, dropChance, notes]);
+    }
   }
 
   return rows;
