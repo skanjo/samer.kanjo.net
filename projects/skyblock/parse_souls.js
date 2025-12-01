@@ -22,9 +22,27 @@ if (kuudraStart !== -1) {
   sections.Kuudra = wikitext.substring(kuudraStart);
 }
 
+// Helper function to clean floor/tier data for Catacombs and Kuudra
+function cleanFloorTierData(floorText) {
+  // Remove data-sort-value attribute: data-sort-value="1" | I -> I
+  let cleaned = floorText.replace(/data-sort-value="[^"]*"\s*\|\s*/g, '');
+
+  // Remove color formatting: {{Red|'''Master'''}} -> Master
+  cleaned = cleaned.replace(/\{\{Red\|'''([^']+)'''\}\}/g, '$1');
+  cleaned = cleaned.replace(/\{\{[^|]+\|'''([^']+)'''\}\}/g, '$1');
+  cleaned = cleaned.replace(/\{\{[^|]+\|([^}]+)\}\}/g, '$1');
+
+  // Clean up any remaining formatting
+  cleaned = cleaned.replace(/'''/g, '').trim();
+
+  return cleaned;
+}
+
 // Parse a wiki table section
 function parseWikiTable(sectionText, sectionType) {
   const rows = [];
+  const isNormal = sectionType === 'Normal';
+  const hasFloorTier = !isNormal; // Catacombs and Kuudra have floor/tier column
 
   // Split by row separator |-
   const tableRows = sectionText.split('|-\n');
@@ -39,8 +57,10 @@ function parseWikiTable(sectionText, sectionType) {
       .map(line => line.trim())
       .filter(line => line.startsWith('|'));
 
-    if (lines.length < 6) {
-      continue; // Need at least 6 columns
+    // Normal has 6 columns, Catacombs/Kuudra have 7 columns (with floor/tier)
+    const minColumns = hasFloorTier ? 7 : 6;
+    if (lines.length < minColumns) {
+      continue;
     }
 
     // Remove leading | from each cell
@@ -53,25 +73,51 @@ function parseWikiTable(sectionText, sectionType) {
     const levelMatch = cells[1].match(/\{\{Lv\|(\d+)\}\}/);
     const level = levelMatch ? levelMatch[1] : '';
 
-    // HP, DMG, Mana Cost (remove commas)
-    const hp = cells[2].replace(/,/g, '').trim();
-    const dmg = cells[3].replace(/,/g, '').trim();
-    const manaCost = cells[4].replace(/,/g, '').trim();
+    let floorTier, hp, dmg, manaCost, dropChance, notes;
 
-    // Drop chance from {{G|99%}}
-    const dropMatch = cells[5].match(/\{\{G\|(\d+)%\}\}/);
-    const dropChance = dropMatch ? dropMatch[1] + '%' : '';
+    if (hasFloorTier) {
+      // Catacombs/Kuudra format: Name, Level, Floor/Tier, HP, DMG, Mana Cost, Drop Chance, Notes
+      floorTier = cleanFloorTierData(cells[2]);
+      hp = cells[3].replace(/,/g, '').trim();
+      dmg = cells[4].replace(/,/g, '').trim();
+      manaCost = cells[5].replace(/,/g, '').trim();
 
-    // Notes (column 6, if exists)
-    let notes = '';
-    if (cells.length > 6) {
-      notes = cells[6]
-        .replace(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g, '$1') // Remove wiki links
-        .replace(/\{\{[^}]+\}\}/g, '') // Remove templates
-        .trim();
+      // Drop chance from {{G|99%}}
+      const dropMatch = cells[6].match(/\{\{G\|(\d+)%\}\}/);
+      dropChance = dropMatch ? dropMatch[1] + '%' : '';
+
+      // Notes (column 7, if exists)
+      notes = '';
+      if (cells.length > 7) {
+        notes = cells[7]
+          .replace(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g, '$1') // Remove wiki links
+          .replace(/\{\{[^}]+\}\}/g, '') // Remove templates
+          .trim();
+      }
+    } else {
+      // Normal format: Name, Level, HP, DMG, Mana Cost, Drop Chance, Notes
+      // Add empty floor/tier column for consistency
+      floorTier = '';
+      hp = cells[2].replace(/,/g, '').trim();
+      dmg = cells[3].replace(/,/g, '').trim();
+      manaCost = cells[4].replace(/,/g, '').trim();
+
+      // Drop chance from {{G|99%}}
+      const dropMatch = cells[5].match(/\{\{G\|(\d+)%\}\}/);
+      dropChance = dropMatch ? dropMatch[1] + '%' : '';
+
+      // Notes (column 6, if exists)
+      notes = '';
+      if (cells.length > 6) {
+        notes = cells[6]
+          .replace(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g, '$1') // Remove wiki links
+          .replace(/\{\{[^}]+\}\}/g, '') // Remove templates
+          .trim();
+      }
     }
 
-    rows.push([sectionType, name, level, hp, dmg, manaCost, dropChance, notes]);
+    // All rows now have the same format with floor/tier column
+    rows.push([sectionType, name, level, floorTier, hp, dmg, manaCost, dropChance, notes]);
   }
 
   return rows;
@@ -87,7 +133,7 @@ for (const [sectionName, sectionText] of Object.entries(sections)) {
 
 // Convert to CSV
 function arrayToCSV(data) {
-  const header = ['type', 'name', 'level', 'hp', 'dmg', 'mana_cost', 'drop_chance', 'notes'];
+  const header = ['type', 'name', 'level', 'floor_tier', 'hp', 'dmg', 'mana_cost', 'drop_chance', 'notes'];
   const csvRows = [header.join(',')];
 
   for (const row of data) {
@@ -110,7 +156,17 @@ const csvContent = arrayToCSV(allRows);
 fs.writeFileSync('necromancy_souls_list.csv', csvContent, 'utf-8');
 
 console.log(`\nTotal rows written: ${allRows.length}`);
-console.log('\nFirst 5 rows:');
-for (let i = 0; i < Math.min(5, allRows.length); i++) {
-  console.log(allRows[i]);
+console.log('\nFirst 5 rows from each section:');
+let currentSection = '';
+let sectionCount = 0;
+for (let i = 0; i < allRows.length; i++) {
+  if (allRows[i][0] !== currentSection) {
+    currentSection = allRows[i][0];
+    sectionCount = 0;
+    console.log(`\n${currentSection}:`);
+  }
+  if (sectionCount < 5) {
+    console.log(allRows[i]);
+    sectionCount++;
+  }
 }
