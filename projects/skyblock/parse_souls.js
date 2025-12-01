@@ -38,6 +38,13 @@ function cleanFloorTierData(floorText) {
   return cleaned;
 }
 
+// Helper function to extract display name from wiki links
+function extractWikiLinkName(text) {
+  // Handle [[Link|Display Name]] format - use Display Name
+  // Handle [[Name]] format - use Name
+  return text.replace(/\[\[(?:[^\]|]+\|)?([^\]]+)\]\]/g, '$1');
+}
+
 // Parse a wiki table section
 function parseWikiTable(sectionText, sectionType) {
   const rows = [];
@@ -66,8 +73,8 @@ function parseWikiTable(sectionText, sectionType) {
     // Remove leading | from each cell
     const cells = lines.map(line => line.substring(1).trim());
 
-    // Extract name (remove wiki links [[Name]])
-    const name = cells[0].replace(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g, '$1');
+    // Extract name (handle both [[Name]] and [[Link|Display Name]] formats)
+    const name = extractWikiLinkName(cells[0]);
 
     // Extract level from {{Lv|1}}
     const levelMatch = cells[1].match(/\{\{Lv\|(\d+)\}\}/);
@@ -90,7 +97,7 @@ function parseWikiTable(sectionText, sectionType) {
       notes = '';
       if (cells.length > 7) {
         notes = cells[7]
-          .replace(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g, '$1') // Remove wiki links
+          .replace(/\[\[(?:[^\]|]+\|)?([^\]]+)\]\]/g, '$1') // Remove wiki links (handle both formats)
           .replace(/\{\{[^}]+\}\}/g, '') // Remove templates
           .trim();
       }
@@ -110,7 +117,7 @@ function parseWikiTable(sectionText, sectionType) {
       notes = '';
       if (cells.length > 6) {
         notes = cells[6]
-          .replace(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g, '$1') // Remove wiki links
+          .replace(/\[\[(?:[^\]|]+\|)?([^\]]+)\]\]/g, '$1') // Remove wiki links (handle both formats)
           .replace(/\{\{[^}]+\}\}/g, '') // Remove templates
           .trim();
       }
