@@ -30,8 +30,7 @@ Normal,Skeleton,5,,285,31,1,95%,
 Normal,Zombie,5,,174,33,1,95%,
 Normal,Zombie,5,,285,41,1,95%,
 Normal,Zombie Villager,5,,285,41,1,95%,
-Normal,Jockey Skeleton,5,,300,50,1,95%,<!--
-Normal,Golem,5,,1200,200,4,95%,-->
+Normal,Jockey Skeleton,5,,300,50,1,95%,
 Normal,Skeleton,6,,201,28,1,94%,
 Normal,Zombie,6,,201,37,1,94%,
 Normal,Skeleton,6,,370,37,1,94%,
@@ -59,8 +58,7 @@ Normal,Zombie Villager,9,,810,86,2,91%,
 Normal,Scarecrow,9,,4500,150,3,91%,
 Normal,Skeleton,10,,351,45,1,90%,
 Normal,Zombie,10,,351,60,1,90%,
-Normal,Skeleton,10,,1050,77,2,90%,<!--
-Normal,Nutcracker,10,,3,100,2,90%,-->
+Normal,Skeleton,10,,1050,77,2,90%,
 Normal,Zombie,10,,1050,103,2,90%,
 Normal,Zombie Villager,10,,1050,103,2,90%,
 Normal,Wither Skeleton,10,,250,160,3,90%,
@@ -216,14 +214,12 @@ Normal,Exalted Minos Inquisitor,750,,40000000,850,417,1%,
 Catacombs,The Watcher,1,Normal Mode,3000,40,1,99%,
 Catacombs,Thorn,1,IV,300000,40,4,99%,
 Catacombs,The Watcher,1,Master Mode,9000,150,3,99%,
-Catacombs,Thorn,1,IV (Master),900000,150,12,99%,<!--
-Catacombs,Watchful Eye,1,Normal Mode,1000,800,16,99%,-->
+Catacombs,Thorn,1,IV (Master),900000,150,12,99%,
 Catacombs,Undead (The Watcher),1,Entrance,14000,1080,22,99%,
 Catacombs,Bonzo,1,I,250000,2960,62,99%,Cannot fire balloons.
 Catacombs,Scarf,1,II,1000000,3840,87,99%,"Cannot use any abilities, including soul sand blizzard, wither barrage, etc.."
 Catacombs,The Professor,1,III,3000000,6640,163,99%,
-Catacombs,Livid,1,V,7000000,10400,278,99%,Cannot use abilities.<!--
-Catacombs,Watchful Eye,1,Master Mode,3000,30000,600,99%,-->
+Catacombs,Livid,1,V,7000000,10400,278,99%,Cannot use abilities.
 Catacombs,Sadan,1,VI,40000000,34400,1088,99%,
 Catacombs,Undead (Bonzo),1,I (Master),20000000,40000,1000,99%,
 Catacombs,Undead Priest,1,II,90000000,45000,1800,99%,
@@ -401,32 +397,15 @@ Catacombs,Prince Friedrich,40,Master Mode,1000000,16000,330,60%,
 Catacombs,Prince Marius,40,Master Mode,1000000,16000,330,60%,
 Catacombs,Prince Nicholas,40,Master Mode,1000000,16000,330,60%,
 Catacombs,Prince Pieter,40,Master Mode,1000000,16000,330,60%,
-Catacombs,Prince Valentin,40,Master Mode,1000000,16000,330,60%,<!--
-Catacombs,Tank Zombie,40,,150000,30000,602,60%,--><!--
-Catacombs,Zombie Grunt,40,,3600000,36000,756,60%,--><!--
-Catacombs,Skeleton Grunt,40,,3000000,42000,870,60%,--><!--
-Catacombs,Undead Skeleton,40,,3600000,51000,1056,60%,-->
-Catacombs,Crypt Lurker,41,Entrance,12000,520,10,59%,Cannot throw bones.<!--
-Catacombs,Crypt Lurker,41,,2100000,39000,801,59%,-->
+Catacombs,Prince Valentin,40,Master Mode,1000000,16000,330,60%,
+Catacombs,Crypt Lurker,41,Entrance,12000,520,10,59%,Cannot throw bones.
 Catacombs,Scared Skeleton,42,Entrance,19000,360,7,58%,
-Catacombs,Scared Skeleton,42,,4500000,42000,885,58%,-->
-Catacombs,Sniper,43,Entrance,13000,800,16,57%,<!--
-Catacombs,Sniper,43,,10200000,165000,3402,57%,--><!--
-Catacombs,Undead Skeleton,40,,10,0,0,60%,
-Catacombs,Undead Skeleton,40,,30,1,0,60%,-->
+Catacombs,Sniper,43,Entrance,13000,800,16,57%,
 Catacombs,Tank Zombie,40,Entrance,1500,320,6,60%,
 Catacombs,Zombie Grunt,40,Entrance,22000,320,6,60%,
 Catacombs,Skeleton Grunt,40,Entrance,18000,360,7,60%,
-Catacombs,Crypt Souleater,45,Entrance,18000,520,10,55%,Does not fire wither skulls from its bow.<!--
-Catacombs,Crypt Souleater,45,,2400000,39000,804,55%,--><!--
-Catacombs,Skeleton Soldier,46,,22000,480,10,54%,
-Catacombs,Skeleton Soldier,46,,3900000,45000,939,54%,-->
-Catacombs,Crypt Dreadlord,47,Entrance,19000,520,10,53%,Cannot fire wither skulls.<!--
-Catacombs,Crypt Dreadlord,47,,2520000,42000,865,53%,--><!--
-Catacombs,Skeleton Master,48,,22000,900,18,52%,
-Catacombs,Skeleton Master,48,,4500000,54000,1125,52%,--><!--
-Catacombs,Undead Skeleton,60,,10,0,0,40%,
-Catacombs,Undead Skeleton,60,,30,1,0,40%,-->
+Catacombs,Crypt Souleater,45,Entrance,18000,520,10,55%,Does not fire wither skulls from its bow.
+Catacombs,Crypt Dreadlord,47,Entrance,19000,520,10,53%,Cannot fire wither skulls.
 Catacombs,Tank Zombie,60,I,2500,464,9,40%,
 Catacombs,Skeleton Grunt,60,I,26000,544,11,40%,
 Catacombs,Zombie Grunt,60,I,36000,544,11,40%,
@@ -446,11 +425,7 @@ Catacombs,Crypt Souleater,65,I (Master),1100000,15000,311,35%,Does not fire with
 Catacombs,Skeleton Soldier,66,I,31000,720,14,34%,
 Catacombs,Skeleton Soldier,66,I (Master),1600000,18000,376,34%,
 Catacombs,Crypt Dreadlord,67,I,32000,760,15,33%,Cannot fire wither skulls.
-Catacombs,Crypt Dreadlord,67,I (Master),1050000,16000,331,33%,Cannot fire wither skulls.<!--
-Catacombs,Skeleton Master,68,,32000,1740,35,32%,
-Catacombs,Skeleton Master,68,,5700000,120000,2457,32%,--><!--
-Catacombs,Undead Skeleton,70,,10,0,0,30%,
-Catacombs,Undead Skeleton,70,,30,1,0,30%,-->
+Catacombs,Crypt Dreadlord,67,I (Master),1050000,16000,331,33%,Cannot fire wither skulls.
 Catacombs,Tank Zombie,70,II,4500,760,15,30%,
 Catacombs,Zombie Grunt,70,II,62000,832,18,30%,
 Catacombs,Skeleton Grunt,70,II,39000,840,17,30%,
@@ -472,34 +447,25 @@ Catacombs,Skeleton Soldier,76,II (Master),3000000,30000,630,24%,
 Catacombs,Crypt Dreadlord,77,II,65000,1120,23,23%,Cannot fire wither skulls.
 Catacombs,Crypt Dreadlord,77,II (Master),2025000,27750,575,23%,Cannot fire wither skulls.
 Catacombs,Skeleton Master,78,II,59000,2625,54,22%,Cannot fire wither skulls.
-Catacombs,Skeleton Master,78,II (Master),3450000,45000,935,22%,Cannot fire wither skulls.<!--
-Catacombs,Undead Skeleton,80,,10,0,0,20%,
-Catacombs,Undead Skeleton,80,,30,1,0,20%,-->
+Catacombs,Skeleton Master,78,II (Master),3450000,45000,935,22%,Cannot fire wither skulls.
 Catacombs,Angry Archaeologist,80,Entrance,9500,320,6,20%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
-Catacombs,Lost Adventurer (Young),80,Entrance,60000,360,8,20%,"Cannot pull out its bow, use its sword ability, or heal up once low on health.<!--"
-Catacombs,Zombie Grunt,80,,120000,1240,26,20%,-->
+Catacombs,Lost Adventurer (Young),80,Entrance,60000,360,8,20%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Tank Zombie,80,III,8000,1320,26,20%,
 Catacombs,Skeleton Grunt,80,III,62000,1600,33,20%,
 Catacombs,Undead Skeleton,80,III,150000,2160,45,20%,
 Catacombs,Skeletor,80,III,250000,3560,74,20%,Cannot throw bones.
-Catacombs,Tank Zombie,80,III (Master),160000,25000,502,20%,<!--
-Catacombs,Zombie Grunt,80,,7500000,57000,1215,20%,-->
-Catacombs,Skeleton Grunt,80,III (Master),6000000,60000,1260,20%,<!--
-Catacombs,Lost Adventurer,80,,21000000,63000,1470,20%,--><!--
-Catacombs,Angry Archaeologist,80,,2400000,66000,1344,20%,-->
+Catacombs,Tank Zombie,80,III (Master),160000,25000,502,20%,
+Catacombs,Skeleton Grunt,80,III (Master),6000000,60000,1260,20%,
 Catacombs,Undead Skeleton,80,III (Master),6300000,78000,1623,20%,
 Catacombs,Skeletor,80,III (Master),6900000,90000,1869,20%,Cannot throw bones.
 Catacombs,Lost Adventurer (Unstable),81,Entrance,60000,360,8,19%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Crypt Lurker,81,III,40000,1800,36,19%,Cannot throw bones.
-Catacombs,Crypt Lurker,81,III (Master),2300000,36000,743,19%,Cannot throw bones.<!--
-Catacombs,Lost Adventurer,81,,21000000,63000,1470,19%,-->
-Catacombs,Lost Adventurer (Holy),82,Entrance,60000,360,8,18%,"Cannot pull out its bow, use its sword ability, or heal up once low on health.<!--"
-Catacombs,Lost Adventurer,82,,21000000,63000,1470,18%,-->
+Catacombs,Crypt Lurker,81,III (Master),2300000,36000,743,19%,Cannot throw bones.
+Catacombs,Lost Adventurer (Holy),82,Entrance,60000,360,8,18%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Lost Adventurer (Superior),83,Entrance,65000,360,8,17%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Zombie Soldier,83,III,140000,1640,34,17%,
 Catacombs,Sniper,83,III,45000,3720,74,17%,
-Catacombs,Zombie Soldier,83,III (Master),6000000,44000,940,17%,<!--
-Catacombs,Lost Adventurer,83,,21600000,69000,1596,17%,-->
+Catacombs,Zombie Soldier,83,III (Master),6000000,44000,940,17%,
 Catacombs,Sniper,83,III (Master),8000000,140000,2880,17%,
 Catacombs,Lost Adventurer (Young),85,I,95000,544,12,15%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Crypt Souleater,85,III,85000,2000,41,15%,Does not fire wither skulls from its bow.
@@ -518,14 +484,11 @@ Catacombs,Crypt Dreadlord,87,III (Master),3300000,42000,873,13%,Cannot fire with
 Catacombs,Lost Adventurer (Superior),88,I,100000,544,12,12%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Skeleton Master,88,III,99000,4050,82,12%,Cannot fire wither skulls.
 Catacombs,Skeleton Master,88,III (Master),5400000,75000,1554,12%,Cannot fire wither skulls.
-Catacombs,Lost Adventurer (Superior),88,I (Master),25500000,78000,1815,12%,"Cannot pull out its bow, use its sword ability, or heal up once low on health.<!--"
-Catacombs,Undead Skeleton,90,,10,0,0,10%,
-Catacombs,Undead Skeleton,90,,30,1,0,10%,-->
+Catacombs,Lost Adventurer (Superior),88,I (Master),25500000,78000,1815,12%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Angry Archaeologist,90,I,20000,640,13,10%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
-Catacombs,Lost Adventurer (Young),90,Entrance,170000,856,19,10%,"Cannot pull out its bow, use its sword ability, or heal up once low on health.<!--"
-Catacombs,Lost Adventurer (Young),90,I,170000,856,19,10%,"Cannot pull out its bow, use its sword ability, or heal up once low on health.<!--"
-Catacombs,Lost Adventurer (Young),90,II,170000,856,19,10%,"Cannot pull out its bow, use its sword ability, or heal up once low on health.<!--"
-Catacombs,Tank Zombie,90,,14000,2200,44,10%,-->
+Catacombs,Lost Adventurer (Young),90,Entrance,170000,856,19,10%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
+Catacombs,Lost Adventurer (Young),90,I,170000,856,19,10%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
+Catacombs,Lost Adventurer (Young),90,II,170000,856,19,10%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Super Tank Zombie,90,IV,20000,2320,46,10%,"Retains its damage reduction passive, but not its knockback immunity."
 Catacombs,Undead Skeleton,90,IV,200000,3240,67,10%,
 Catacombs,Super Archer,90,IV,400000,4240,89,10%,
@@ -533,8 +496,7 @@ Catacombs,Withermancer,90,IV,300000,4640,96,10%,"Cannot summon wither skulls, an
 Catacombs,Skeletor,90,IV,500000,4640,98,10%,Cannot throw bones.
 Catacombs,Fels,90,V,600000,8000,166,10%,"Invisible, but can still attack."
 Catacombs,Angry Archaeologist,90,I (Master),1000000,24000,490,10%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
-Catacombs,Super Tank Zombie,90,IV (Master),180000,25600,514,10%,"Retains its damage reduction passive, but not its knockback immunity.<!--"
-Catacombs,Tank Zombie,90,,225000,32500,652,10%,-->
+Catacombs,Super Tank Zombie,90,IV (Master),180000,25600,514,10%,"Retains its damage reduction passive, but not its knockback immunity."
 Catacombs,Lost Adventurer (Young),90,I,14250000,42000,983,10%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Lost Adventurer (Young),90,II,14250000,42000,983,10%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Undead Skeleton,90,IV (Master),7500000,87000,1815,10%,
@@ -572,9 +534,7 @@ Catacombs,Zombie Knight,96,IV (Master),10000000,77500,1650,4%,
 Catacombs,Crypt Dreadlord,97,IV,210000,2840,59,3%,Cannot fire wither skulls.
 Catacombs,Crypt Dreadlord,97,IV (Master),4875000,58750,1224,3%,Cannot fire wither skulls.
 Catacombs,Skeleton Master,98,IV,180000,5700,116,2%,Cannot fire wither skulls.
-Catacombs,Skeleton Master,98,IV (Master),8000000,110000,2280,2%,Cannot fire wither skulls.<!--
-Catacombs,Undead Skeleton,100,,10,0,0,1%,
-Catacombs,Undead Skeleton,100,,30,1,0,1%,-->
+Catacombs,Skeleton Master,98,IV (Master),8000000,110000,2280,2%,Cannot fire wither skulls.
 Catacombs,Angry Archaeologist,100,Entrance,44000,1152,23,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Angry Archaeologist,100,I,44000,1152,23,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Angry Archaeologist,100,II,44000,1152,23,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
@@ -584,12 +544,10 @@ Catacombs,Super Tank Zombie,100,V,35000,3520,70,1%,"Retains its damage reduction
 Catacombs,Undead Skeleton,100,V,250000,4240,88,1%,
 Catacombs,Super Archer,100,V,550000,6240,131,1%,
 Catacombs,Withermancer,100,V,470000,6400,133,1%,"Cannot summon wither skulls, and by extension, cannot store them."
-Catacombs,Skeletor,100,V,700000,6400,135,1%,Cannot throw bones.<!--
-Catacombs,Skeletor Prime,100,,1111111,8800,187,1%,-->
+Catacombs,Skeletor,100,V,700000,6400,135,1%,Cannot throw bones.
 Catacombs,Fels,100,VI,700000,9600,199,1%,"Invisible, but can still attack."
 Catacombs,Wither Miner,100,VII,10000000,14400,388,1%,Cannot shoot wither skulls.
-Catacombs,Wither Guard,100,VII,3500000,20000,435,1%,<!--
-Catacombs,Necron's Apostle,100,,15000000,24000,630,1%,-->
+Catacombs,Wither Guard,100,VII,3500000,20000,435,1%,
 Catacombs,Super Tank Zombie,100,V (Master),300000,35000,703,1%,"Retains its damage reduction passive, but not its knockback immunity."
 Catacombs,Angry Archaeologist,100,I,1875000,40500,829,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Angry Archaeologist,100,II,1875000,40500,829,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
@@ -597,22 +555,18 @@ Catacombs,Lost Adventurer (Young),100,II,24000000,70000,1640,1%,"Cannot pull out
 Catacombs,Lost Adventurer (Young),100,III,24000000,70000,1640,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Wither Husk,100,VII (Master),500000000,90000,6800,1%,
 Catacombs,Undead Skeleton,100,V (Master),8400000,96000,2004,1%,
-Catacombs,Skeletor,100,V (Master),9000000,108000,2250,1%,Cannot throw bones.<!--
-Catacombs,Skeletor Prime,100,,11212119,120000,2512,1%,-->
+Catacombs,Skeletor,100,V (Master),9000000,108000,2250,1%,Cannot throw bones.
 Catacombs,Super Archer,100,V (Master),60000000,135000,3300,1%,
 Catacombs,Withermancer,100,V (Master),48000000,150000,3480,1%,"Cannot summon wither skulls, and by extension, cannot store them."
 Catacombs,Wither Miner,100,VII (Master),300000000,180000,6600,1%,Cannot shoot wither skulls.
 Catacombs,Fels,100,VI (Master),80000000,200000,4800,1%,"Invisible, but can still attack."
-Catacombs,Wither Guard,100,VII (Master),300000000,225000,7500,1%,<!--
-Catacombs,Necron's Apostle,100,,300000000,300000,9000,1%,-->
+Catacombs,Wither Guard,100,VII (Master),300000000,225000,7500,1%,
 Catacombs,Lost Adventurer (Unstable),101,II,300000,1760,38,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Lost Adventurer (Unstable),101,III,300000,1760,38,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
-Catacombs,Crypt Lurker,101,V,123000,3760,76,1%,Cannot throw bones.<!--
-Catacombs,Skeletor Prime,101,,777777,6640,141,1%,-->
+Catacombs,Crypt Lurker,101,V,123000,3760,76,1%,Cannot throw bones.
 Catacombs,Crypt Lurker,101,V (Master),4350000,63000,1304,1%,Cannot throw bones.
-Catacombs,Lost Adventurer (Unstable),101,II,24000000,70000,1640,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health.<!--"
-Catacombs,Lost Adventurer (Unstable),101,III,24000000,70000,1640,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health.<!--"
-Catacombs,Skeletor Prime,101,,9393939,114000,2374,1%,-->
+Catacombs,Lost Adventurer (Unstable),101,II,24000000,70000,1640,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
+Catacombs,Lost Adventurer (Unstable),101,III,24000000,70000,1640,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Lost Adventurer (Holy),102,II,300000,1760,38,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Lost Adventurer (Holy),102,III,300000,1760,38,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Lost Adventurer (Holy),102,II,24000000,70000,1640,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
@@ -634,9 +588,7 @@ Catacombs,Zombie Knight,106,V (Master),13500000,102000,2175,1%,
 Catacombs,Crypt Dreadlord,107,V,270000,4080,85,1%,Cannot fire wither skulls.
 Catacombs,Crypt Dreadlord,107,V (Master),6750000,78000,1628,1%,Cannot fire wither skulls.
 Catacombs,Skeleton Master,108,V,280000,8700,177,1%,Cannot fire wither skulls.
-Catacombs,Skeleton Master,108,V (Master),11100000,150000,3111,1%,Cannot fire wither skulls.<!--
-Catacombs,Undead Skeleton,110,,10,0,0,1%,
-Catacombs,Undead Skeleton,110,,30,1,0,1%,-->
+Catacombs,Skeleton Master,108,V (Master),11100000,150000,3111,1%,Cannot fire wither skulls.
 Catacombs,Angry Archaeologist,110,II,75000,2280,47,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Angry Archaeologist,110,III,75000,2280,47,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Lost Adventurer (Young),110,IV,450000,2680,59,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
@@ -682,15 +634,12 @@ Catacombs,Zombie Knight,116,VI (Master),20000000,132000,2840,1%,
 Catacombs,Crypt Dreadlord,117,VI,390000,5680,118,1%,Cannot fire wither skulls.
 Catacombs,Crypt Dreadlord,117,VI (Master),10200000,100000,2102,1%,Cannot fire wither skulls.
 Catacombs,Skeleton Master,118,VI,400000,12000,244,1%,Cannot fire wither skulls.
-Catacombs,Skeleton Master,118,VI (Master),21000000,200000,4210,1%,Cannot fire wither skulls.<!--
-Catacombs,Undead Skeleton,120,,10,0,0,1%,
-Catacombs,Undead Skeleton,120,,30,1,0,1%,-->
+Catacombs,Skeleton Master,118,VI (Master),21000000,200000,4210,1%,Cannot fire wither skulls.
 Catacombs,Angry Archaeologist,120,IV,125000,2800,57,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Lost Adventurer (Young),120,III,550000,3200,70,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Lost Adventurer (Young),120,V,550000,3200,70,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Shadow Assassin,120,III,700000,3280,73,1%,Completely invisible except for its iron sword. Cannot teleport.
-Catacombs,Undead Skeleton,120,VII,360000,5760,119,1%,<!--
-Catacombs,Skeletor,120,,1000000,8040,171,1%,-->
+Catacombs,Undead Skeleton,120,VII,360000,5760,119,1%,
 Catacombs,Super Tank Zombie,120,VII,90000,10240,206,1%,"Retains its damage reduction passive, but not its knockback immunity."
 Catacombs,Withermancer,120,VII,1250000,17600,365,1%,"Cannot summon wither skulls, and by extension, cannot store them."
 Catacombs,Zombie Commander,120,VII,3500000,18400,403,1%,Cannot cast the whip.
@@ -699,8 +648,7 @@ Catacombs,Super Archer,120,VII,1600000,20800,432,1%,
 Catacombs,Super Tank Zombie,120,VII (Master),1050000,54250,1096,1%,"Retains its damage reduction passive, but not its knockback immunity."
 Catacombs,Angry Archaeologist,120,IV (Master),4375000,87500,1794,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Undead Skeleton,120,VII (Master),10500000,114000,2385,1%,
-Catacombs,Shadow Assassin,120,III (Master),40000000,120000,2800,1%,Completely invisible except for its iron sword. Cannot teleport.<!--
-Catacombs,Skeletor,120,,12000000,126000,2640,1%,-->
+Catacombs,Shadow Assassin,120,III (Master),40000000,120000,2800,1%,Completely invisible except for its iron sword. Cannot teleport.
 Catacombs,Lost Adventurer (Young),120,III,48000000,135000,3180,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Lost Adventurer (Young),120,V,48000000,135000,3180,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Skeletor Prime,120,VII (Master),20606060,192000,4046,1%,Cannot throw bones.
@@ -844,9 +792,7 @@ Catacombs,King Midas,170,VII (Master),35000000,152000,3390,1%,"Cannot use the Go
 Catacombs,Angry Archaeologist,170,VII (Master),18000000,184000,3860,1%,"Cannot pull out its bow, use its sword ability, or heal up once low on health."
 Catacombs,Shadow Assassin,170,VII (Master),140000000,400000,9400,1%,Completely invisible except for its iron sword. Cannot teleport.
 Catacombs,Shadow Assassin,171,VII,20000000,48000,1160,1%,Completely invisible except for its iron sword. Cannot teleport.
-Catacombs,Shadow Assassin,171,VII (Master),145000000,400000,9450,1%,Completely invisible except for its iron sword. Cannot teleport.<!--
-Catacombs,Necron's Apostle,200,,25000000,32000,890,1%,
-Catacombs,Necron's Apostle,200,,390000000,350000,10900,1%,-->
+Catacombs,Shadow Assassin,171,VII (Master),145000000,400000,9450,1%,Completely invisible except for its iron sword. Cannot teleport.
 Catacombs,Apostle,300,VII (Master),800000000,120000,10400,1%,
 Kuudra,Explosive Imp,50,Basic,100000,2000,41,50%,
 Kuudra,Kuudra Berserker,100,Basic,3000000,2000,70,1%,

@@ -22,6 +22,12 @@ if (kuudraStart !== -1) {
   sections.Kuudra = wikitext.substring(kuudraStart);
 }
 
+// Helper function to remove HTML comments from text
+function removeHtmlComments(text) {
+  // Remove HTML comments: <!-- ... -->
+  return text.replace(/<!--[\s\S]*?-->/g, '');
+}
+
 // Helper function to clean floor/tier data for Catacombs and Kuudra
 function cleanFloorTierData(floorText) {
   // Remove data-sort-value attribute: data-sort-value="1" | I -> I
@@ -51,8 +57,11 @@ function parseWikiTable(sectionText, sectionType) {
   const isNormal = sectionType === 'Normal';
   const hasFloorTier = !isNormal; // Catacombs and Kuudra have floor/tier column
 
+  // Remove HTML comments from the section text
+  const cleanedText = removeHtmlComments(sectionText);
+
   // Split by row separator |-
-  const tableRows = sectionText.split('|-\n');
+  const tableRows = cleanedText.split('|-\n');
 
   for (const row of tableRows) {
     if (!row.trim() || row.trim().startsWith('!')) {
