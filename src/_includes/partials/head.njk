@@ -15,6 +15,8 @@
   <meta name="x-site-version" content="{{ pkg.version }}">
 
   <title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
+  {% set metaDescription = description if description else (page.excerpt | plainText if page.excerpt) %}
+  <meta name="description" content="{{ metaDescription if metaDescription else site.description }}">
 
   <link rel="stylesheet" href="/css/site.css">
   <link rel="stylesheet" href="/css/prism-darcula.css">

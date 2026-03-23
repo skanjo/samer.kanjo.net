@@ -1,6 +1,7 @@
 ---
 layout: layouts/full_width.njk
 title: Projects
+description: Projects by Samer Kanjo.
 date: 'git Last Modified'
 ---
 

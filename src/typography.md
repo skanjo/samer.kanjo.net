@@ -1,6 +1,7 @@
 ---
 layout: layouts/full_width.njk
 title: Typography
+description: Typography reference for samer.kanjo.net.
 date: 'git Last Modified'
 ---
 
