@@ -5,6 +5,10 @@
       "name": "Blog"
     },
     {
+      "path": "/wiki/",
+      "name": "Wiki"
+    },
+    {
       "path": "/projects/",
       "name": "Projects"
     },
