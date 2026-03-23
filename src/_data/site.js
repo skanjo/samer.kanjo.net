@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   title: "Samer Kanjo",
   url: "https://samer.kanjo.net/",
   description: "The personal web site of Samer Kanjo",

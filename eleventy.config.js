@@ -1,10 +1,10 @@
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const {DateTime} = require("luxon");
-const markdownIt = require("markdown-it");
-const markdownItLinkAttributes = require('markdown-it-link-attributes');
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import {DateTime} from "luxon";
+import markdownIt from "markdown-it";
+import markdownItLinkAttributes from "markdown-it-link-attributes";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
 
   // --- Copy Assets
 

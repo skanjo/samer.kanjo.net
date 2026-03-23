@@ -1,38 +1,36 @@
 {
   "name": "samer.kanjo.net",
   "version": "3.21.0",
+  "type": "module",
   "description": "The personal web site of Samer Kanjo",
   "keywords": [],
   "homepage": "https://github.com/skanjo/samer.kanjo.net/blob/master/README.md",
   "bugs": "https://github.com/skanjo/samer.kanjo.net/issues",
   "license": "UNLICENSED",
   "private": true,
+  "packageManager": "npm@11.9.0",
   "author": "Samer Kanjo",
-  "main": "index.js",
   "repository": "github:skanjo/samer.kanjo.net",
   "scripts": {
-    "start": "npm-run-all -p dev:*",
-    "build": "npm-run-all -s clean -p build:*",
-    "clean": "rimraf _site",
+    "start": "npm run dev:11ty & npm run dev:css & wait",
+    "build": "npm run clean && npm run build:11ty & npm run build:css & wait",
+    "clean": "rm -rf _site",
     "dev:11ty": "NODE_ENV=development eleventy --serve",
-    "dev:css": "tailwindcss -i src/assets/css/site.css -o _site/css/site.css --watch --postcss",
+    "dev:css": "tailwindcss -i src/assets/css/site.css -o _site/css/site.css --watch",
     "build:11ty": "NODE_ENV=production eleventy",
-    "build:css": "tailwindcss -i src/assets/css/site.css -o _site/css/site.css --postcss"
+    "build:css": "tailwindcss -i src/assets/css/site.css -o _site/css/site.css --minify"
   },
   "devDependencies": {
-    "@11ty/eleventy": "2.0.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
-    "@tailwindcss/typography": "0.5.12",
-    "autoprefixer": "10.4.19",
-    "luxon": "3.4.4",
+    "@11ty/eleventy": "3.1.5",
+    "@11ty/eleventy-plugin-syntaxhighlight": "5.0.2",
+    "@tailwindcss/cli": "4.2.2",
+    "@tailwindcss/typography": "0.5.19",
+    "luxon": "3.7.2",
     "markdown-it-link-attributes": "4.0.1",
-    "npm-run-all": "4.1.5",
-    "postcss": "8.4.38",
-    "rimraf": "5.0.5",
-    "tailwindcss": "3.4.3"
+    "tailwindcss": "4.2.2"
   },
   "dependencies": {
-    "alpinejs": "3.13.10",
-    "htmx.org": "1.9.12"
+    "alpinejs": "3.15.8",
+    "htmx.org": "2.0.8"
   }
 }

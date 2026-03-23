@@ -1,41 +1,51 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Roboto Serif', serif;
+  --font-mono: 'Roboto Mono', monospace;
+}
 
 @layer base {
+  *, ::after, ::before {
+    border-color: var(--color-gray-200);
+  }
+
   body {
-    @apply antialiased leading-relaxed
+    @apply antialiased leading-relaxed;
   }
 
   h1 {
-    @apply text-4xl mb-8 font-bold
+    @apply text-4xl mb-8 font-bold;
   }
 
   h2 {
-    @apply text-3xl mb-4 mt-8 font-semibold border-b-[1px]
+    @apply text-3xl mb-4 mt-8 font-semibold border-b;
   }
 
   h3 {
-    @apply text-2xl mb-2 mt-8 font-medium
+    @apply text-2xl mb-2 mt-8 font-medium;
   }
 
   h4 {
-    @apply text-xl mb-2 mt-8 font-normal
+    @apply text-xl mb-2 mt-8 font-normal;
   }
 
   p {
-    @apply mb-8 mt-4
+    @apply mb-8 mt-4;
   }
 
   a {
-    @apply text-red-700 hover:underline
+    @apply text-red-700 hover:underline;
   }
 
   ol {
-    @apply list-decimal list-outside ps-10 my-4
+    @apply list-decimal list-outside ps-10 my-4;
   }
 
   ul {
-    @apply list-disc list-outside ps-10 my-4
+    @apply list-disc list-outside ps-10 my-4;
   }
 }
