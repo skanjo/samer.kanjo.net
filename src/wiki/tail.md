@@ -2,36 +2,32 @@
 title: Reading file endings with tail
 ---
 
-Tail is a command-line utility for reading the end of files. It is commonly used to monitor log files in real-time.
-
-## List last 10 lines of file
+Last 10 lines (default):
 
 ```bash
-tail some.log
+tail file.log
 ```
 
-## List last 50 lines of file
+Last N lines:
 
 ```bash
-tail -50 some.log
+tail -50 file.log
 ```
 
-## List everything after top 10 lines of file
+Follow a file (monitor for new lines):
 
 ```bash
-tail +10 some.log
+tail -f file.log
 ```
 
-## List last 10 lines of file and monitor
+Follow with initial context of N lines:
 
 ```bash
-tail -10f some.log
+tail -10f file.log
 ```
 
-## Ignore the first N lines of a file
-
-This is useful when processing file with a header in which case N=2
+Skip the first N lines (useful for files with headers):
 
 ```bash
-tail -n+N FILE
+tail -n+2 file.log
 ```

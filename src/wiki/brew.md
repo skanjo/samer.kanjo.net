@@ -2,77 +2,125 @@
 title: Managing packages with Homebrew
 ---
 
-Homebrew is a package manager for macOS that simplifies the installation, updating, and management of software packages.
+## Installing
 
-To list software you currently have installed with version numbers, use:
+Formulae are packages built from source (e.g. `git`, `jq`). Casks are packages distributed as native macOS installers
+(`.dmg`, `.pkg`) — often GUI apps like 1Password but also CLI tools like Claude Code.
+
+Install a formula:
+
+```bash
+brew install [formula]
+```
+
+Install a cask:
+
+```bash
+brew install --cask [cask]
+```
+
+## Listing
+
+List installed packages with version numbers:
 
 ```bash
 brew list --versions
 ```
 
-To see just the software, which is not a dependency of another:
+List packages that are not dependencies of another (top-level installs):
 
 ```bash
 brew leaves
 ```
 
-To keep the Homebrew itself up-to-date, and fetch the newest version from GitHub:
+List installed casks (not included in `brew leaves`):
 
 ```bash
-brew update
+brew list --cask
 ```
 
-After updating the brew, check which formulae have an updated version available, display detailed version information to
-see if you have more than one older version laying around:
+Show info about a formula:
 
 ```bash
-brew outdated --verbose
+brew info [formula]
 ```
 
-See any app that you no longer need and want to get rid of them? Check the dependencies for all installed formulae:
+Show dependencies for all installed formulae:
 
 ```bash
 brew deps --installed
 ```
 
-For even more detailed picture, show the dependencies for all installed formulae as a tree:
+Show dependencies as a tree:
 
 ```bash
 brew deps --installed --tree
 ```
 
-As a final precaution before removing a formula, see what other installed formulae use it as a dependency:
+Check which installed formulae depend on a given formula:
 
 ```bash
-brew uses --installed formula
+brew uses --installed [formula]
 ```
 
-Uninstall formulae and all their older versions:
+## Updating
+
+Fetch the latest Homebrew and formula definitions:
 
 ```bash
-brew remove --force formulae
+brew update
 ```
 
-Upgrade remaining formulae:
+Check which installed formulae have newer versions available:
+
+```bash
+brew outdated --verbose
+```
+
+Upgrade all outdated formulae:
 
 ```bash
 brew upgrade
 ```
 
-Show what will be removed by cleanup command, but do not actually remove anything:
+## Backup and Restore
+
+Export all installed formulae, casks, and taps to a `Brewfile`:
+
+```bash
+brew bundle dump
+```
+
+Use `--force` to overwrite an existing `Brewfile`:
+
+```bash
+brew bundle dump --force
+```
+
+Restore from a `Brewfile`:
+
+```bash
+brew bundle install
+```
+
+## Removing
+
+Uninstall a formula and all its older versions:
+
+```bash
+brew remove --force [formula]
+```
+
+## Cleanup
+
+Dry run — show what cleanup would remove:
 
 ```bash
 brew cleanup -ns
 ```
 
-Clean the "Cellar" removing any older versions of installed formulae and clearing old downloads from the Homebrew
-download-cache. Additionally, scrub the cache, removing downloads for even the latest versions of formula, which are
-downloaded, but not installed:
+Remove old versions and scrub the download cache:
 
 ```bash
 brew cleanup -s
-```
-
-```bash
-brew info [formula]
 ```

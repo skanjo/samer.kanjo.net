@@ -2,9 +2,8 @@
 title: Managing multiple Git repos with bitcar
 ---
 
-Bitcar is a command-line tool designed to help developers manage multiple Git repositories efficiently. It allows for
-quick navigation between repos, opening them in browsers or editors, and performing various Git-related tasks from the
-command line.
+[bitcar](https://github.com/machellerogden/bitcar) is a CLI tool for managing many local Git repos. It caches your
+GitHub repos and lets you search, clone, and navigate between them quickly.
 
 ## Install
 
@@ -12,35 +11,33 @@ command line.
 npm -i -g bitcar
 ```
 
-## Search
+## Search and navigate
 
-Searches current cache for repo, clones if not already cloned, and then chage directory to repo:
+Search the cache for a repo, clone it if needed, and `cd` into it:
 
 ```bash
 bit SEARCH_TERM
 ```
 
-## Refresh Cache
+## Refresh cache
 
-Reads repos available from your accout on GitHUb, including any repos from organizations and stores basic metadata about
-rh repo to support search, clone, and open repo in browser.
+Fetch repos from your GitHub account (including orgs) and update the local cache:
 
 ```bash
 bit -r
 ```
 
-## Clone All
+## Clone all
 
-Clone any repos found in your cache. Optionally only clone repos matching search term:
+Clone all repos in the cache, or only those matching a search term:
 
 ```bash
 bit --clone-all SEARCH_TERM
 ```
 
-## Sync Existing
+## Sync existing
 
-Include local repos not in GitHub in the cache to support use of bitcar commands. NOTE: This config is wiped out when
-cache is refreshed and will need to be run again.
+Add local repos not on GitHub to the cache. This is cleared on cache refresh and needs to be run again:
 
 ```bash
 bit --sync-existing

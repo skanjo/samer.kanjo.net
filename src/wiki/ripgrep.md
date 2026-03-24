@@ -2,37 +2,54 @@
 title: Searching text with ripgrep
 ---
 
-Ripgrep is a line-oriented search tool that recursively searches directories for a regex pattern. It is known for its
-speed and efficiency.
-
 ## Install
 
 ```bash
 brew install ripgrep
 ```
 
-## Search
+## Searching
 
-### Supported File Types
+Basic recursive search:
 
-Shows all supported file types that can be used as filter during search rather than using regex to limit to file types
+```bash
+rg 'pattern'
+```
+
+Limit search to a file type:
+
+```bash
+rg -t clojure 'pattern'
+```
+
+List all supported file types:
 
 ```bash
 rg --type-list
 ```
 
-To limit search by file type use the name with `-t` option.
+Follow symlinks:
 
 ```bash
-rg -t clojure 'foo'
+rg -L 'pattern'
 ```
 
-### Follow Symlinks
+## Context
 
-Follow any symlinks using the `-L` or `--follow` options:
+Show N lines before and after each match:
 
 ```bash
-rg -L 'foo'
+rg -C 3 'pattern'
 ```
 
-### With Context
+Show N lines before each match:
+
+```bash
+rg -B 3 'pattern'
+```
+
+Show N lines after each match:
+
+```bash
+rg -A 3 'pattern'
+```
