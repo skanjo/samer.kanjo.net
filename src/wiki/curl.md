@@ -1,12 +1,5 @@
 ---
-title: 'curl: Cheat Sheet'
-publicationDate: '2020-04-18'
-tags: 'Cheat Sheet'
----
-
-Learn essential commands for transferring data with URLs, making HTTP requests, and downloading files with this quick
-reference guide. Perfect for developers and system administrators!
-
+title: Transferring data with curl
 ---
 
 Curl is a command-line tool for transferring data with URLs. It supports various protocols and is commonly used for HTTP

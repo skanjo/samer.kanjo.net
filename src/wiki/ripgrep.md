@@ -1,12 +1,5 @@
 ---
-title: 'ripgrep: Cheat Sheet'
-publicationDate: '2020-04-19'
-tags: 'Cheat Sheet'
----
-
-Learn essential commands for fast and efficient text searching across multiple files and directories with this quick
-reference guide. Perfect for developers and system administrators!
-
+title: Searching text with ripgrep
 ---
 
 Ripgrep is a line-oriented search tool that recursively searches directories for a regex pattern. It is known for its

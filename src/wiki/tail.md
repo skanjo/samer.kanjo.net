@@ -1,12 +1,5 @@
 ---
-title: 'tail: Cheat Sheet'
-publicationDate: '2020-04-19'
-tags: 'Cheat Sheet'
----
-
-Learn essential commands for viewing file endings, monitoring logs, and processing output streams with this quick
-reference guide. Perfect for system administrators and developers!
-
+title: Reading file endings with tail
 ---
 
 Tail is a command-line utility for reading the end of files. It is commonly used to monitor log files in real-time.

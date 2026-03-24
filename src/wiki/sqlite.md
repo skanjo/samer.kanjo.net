@@ -1,12 +1,5 @@
 ---
-title: 'sqlite: Cheat Sheet'
-publicationDate: '2020-10-07'
-tags: 'Cheat Sheet'
----
-
-Learn essential commands for database creation, data manipulation, and querying with this quick reference guide. Perfect
-for developers working on embedded systems or local applications!
-
+title: Querying databases with SQLite
 ---
 
 SQLite is a self-contained, high-reliability, embedded, full-featured, public-domain SQL database engine.

@@ -1,12 +1,5 @@
 ---
-title: 'ssh-keygen: Cheat Sheet'
-publicationDate: '2020-10-07'
-tags: 'Cheat Sheet'
----
-
-Learn essential commands for generating, managing, and converting SSH authentication keys with this quick reference
-guide. Perfect for system administrators and security professionals!
-
+title: Managing SSH keys with ssh-keygen
 ---
 
 ssh-keygen is a tool for generating, managing, and converting authentication keys for SSH.
@@ -14,7 +7,7 @@ ssh-keygen is a tool for generating, managing, and converting authentication key
 Generate RSA key pair, with passphrase and no prompts
 
 ```bash
-ssh-keygen -t rsa -f ~/.ssh/id_rsa -N "passphrase"
+ssh-keygen -t rsa -f ~/.ssh/id_rsa -N "passphrase"
 ```
 
 Generate RSA key pair, with no passphrase and no prompts

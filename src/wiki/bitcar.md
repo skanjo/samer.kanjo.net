@@ -1,10 +1,5 @@
 ---
-title: 'bitcar: Cheat Sheet'
-publicationDate: '2020-04-19'
-tags: 'Cheat Sheet'
----
-Learn essential commands for managing GitHub repositories from the command line with this quick reference guide. Perfect
-for developers working across multiple codebases!
+title: Managing multiple Git repos with bitcar
 ---
 
 Bitcar is a command-line tool designed to help developers manage multiple Git repositories efficiently. It allows for

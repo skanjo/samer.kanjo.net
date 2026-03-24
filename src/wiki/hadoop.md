@@ -1,13 +1,5 @@
 ---
-title: 'hadoop: Cheat Sheet'
-publicationDate: '2020-10-07'
-lastUpdated: '2024-07-05'
-tags: 'Cheat Sheet'
----
-
-Learn essential commands for distributed storage, file operations, cluster management, and data processing with this
-quick reference guide. Perfect for big data engineers and analysts!
-
+title: Working with Hadoop and HDFS
 ---
 
 Hadoop is an open-source framework for distributed storage and processing of large data sets using the MapReduce

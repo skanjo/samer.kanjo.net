@@ -1,13 +1,5 @@
 ---
-title: 'jq: Cheat Sheet'
-publicationDate: '2020-04-19'
-lastUpdated: '2023-03-17'
-tags: 'Cheat Sheet'
----
-
-Learn essential commands for filtering, transforming, and manipulating JSON data with this quick reference guide.
-Perfect for developers and data analysts working with JSON!
-
+title: Processing JSON with jq
 ---
 
 jq is a lightweight and flexible command-line JSON processor. It allows for filtering, transforming, and manipulating

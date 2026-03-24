@@ -1,12 +1,5 @@
 ---
-title: 'brew: Cheat Sheet'
-publicationDate: '2020-10-07'
-tags: 'Cheat Sheet'
----
-
-Learn essential commands for installing, updating, and managing software packages on macOS with this quick reference
-guide. Perfect for macOS users and developers!
-
+title: Managing packages with Homebrew
 ---
 
 Homebrew is a package manager for macOS that simplifies the installation, updating, and management of software packages.

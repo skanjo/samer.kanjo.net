@@ -1,5 +1,5 @@
 ---
-title: Running Claude Code Autonomously in Apple Native Containers
+title: Running Claude Code autonomously in Apple containers
 ---
 
 A guide to using macOS containerization to give Claude Code a sandboxed, autonomous environment for iterating on a

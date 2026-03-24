@@ -1,12 +1,5 @@
 ---
-title: 'gpg: Cheat Sheet'
-publicationDate: '2020-10-07'
-tags: 'Cheat Sheet'
----
-
-Learn essential commands for encryption, decryption, and key management with this quick reference guide. Perfect for
-security-conscious users and developers!
-
+title: Encrypting and signing with GPG
 ---
 
 GPG is a tool for secure communication and data storage. It allows for encryption, decryption, and signing of data and

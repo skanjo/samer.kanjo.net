@@ -1,12 +1,5 @@
 ---
-title: 'gzip: Cheat Sheet'
-publicationDate: '2020-10-07'
-tags: 'Cheat Sheet'
----
-
-Learn essential commands for compressing, decompressing, and managing compressed files with this quick reference guide.
-Perfect for system administrators and anyone working with large files!
-
+title: Compressing files with gzip
 ---
 
 Gzip is a file compression tool used to reduce the size of files. It is commonly used in Unix-like operating systems.
