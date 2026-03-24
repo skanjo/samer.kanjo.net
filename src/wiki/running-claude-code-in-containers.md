@@ -34,7 +34,7 @@ Silicon (M1+) and macOS 15 or later.
 **Option A: Homebrew**
 
 ```bash
-brew install --cask container
+brew install container
 ```
 
 **Option B: GitHub releases**
@@ -45,7 +45,8 @@ https://github.com/apple/container/releases and run it.
 **After installing**, start the background service and verify:
 
 ```bash
-container system startcontainer --version
+container system start
+container --version
 ```
 
 ## Step 2: Create a Containerfile (Dockerfile equivalent)
@@ -88,7 +89,7 @@ container run \
   --mount "type=bind,source=/path/to/your/repo,target=/workspace" \
   --interactive \
   claude-sandbox \
-  /bin/bas
+  /bin/bash
 ```
 
 Key flags:
@@ -334,7 +335,7 @@ container run \
   --mount "type=bind,source=/path/to/your/repo,target=/workspace" \
   --env "ANTHROPIC_API_KEY=sk-ant-..." \
   claude-sandbox \
-  sh -c 'cd /workspace && claude --dangerously-skip-permissions --print --prompt "..."
+  sh -c 'cd /workspace && claude --dangerously-skip-permissions --print --prompt "..."'
 ```
 
 ### Flags explained:
