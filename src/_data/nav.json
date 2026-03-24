@@ -5,8 +5,8 @@
       "name": "Blog"
     },
     {
-      "path": "/wiki/",
-      "name": "Wiki"
+      "path": "/reference/",
+      "name": "Reference"
     },
     {
       "path": "/projects/",

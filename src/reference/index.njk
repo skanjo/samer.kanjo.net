@@ -1,13 +1,13 @@
 ---
-title: Wiki
+title: Reference
 description: A collection of technical notes and references by Samer Kanjo.
 eleventyExcludeFromCollections: true
 layout: 'layouts/full_width.njk'
 ---
 
-<h1>Wiki</h1>
+<h1>Reference</h1>
 
-{% for entry in collections.wiki | sort(attribute='data.title') %}
+{% for entry in collections.reference | sort(attribute='data.title') %}
   <div class="flex flex-col">
     <h3><a href="{{ entry.url }}">{{ entry.data.title }}</a></h3>
     {% if entry.data.page.excerpt %}

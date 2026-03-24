@@ -35,7 +35,7 @@ problem.
 
 This site at this domain has been available for a number of years. I started with [Hugo](https://gohugo.io), then
 [MetalSmith](https://metalsmith.io), then [11ty](https://www.11ty.dev), then went live with
-[VuePress](https://vuepress.vuejs.org). After some initial work on the [Reference](/reference/) section I did not touch
+[VuePress](https://vuepress.vuejs.org). After some initial work on the [Reference](/reference) section I did not touch
 the site until now. VuePress was old, replaced with [VitePress](https://vitepress.dev). VuePress was nice in that it
 provided the structure of the site allowing you to focus on the content. However, I now wanted to build that all myself
 for the learning experience using [Tailwind CSS](https://tailwindcss.com) and 11ty. And that is how this site got going

@@ -1,6 +1,6 @@
 ---
 title: Signing Git commits with GPG
-publicationDate: '2020-10-07'
+publicationDate: '2026-03-24'
 tags: 'Security'
 ---
 
